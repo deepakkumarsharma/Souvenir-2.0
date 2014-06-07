@@ -1,0 +1,241 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+/* line 17, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/***** Mixins ******/
+/***** Colors *******/
+/***** Color-Ends *****/
+/***************** SASSY BEGINS ***************/
+/* line 51, ../sass/screen.scss */
+a {
+  text-decoration: none;
+  color: white;
+}
+/* line 54, ../sass/screen.scss */
+a:hover {
+  text-shadow: 1px 1px 1px #aaaaaa;
+}
+
+/* line 58, ../sass/screen.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 63, ../sass/screen.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.6rem;
+}
+@media only screen and (max-width: 600px) {
+  /* line 63, ../sass/screen.scss */
+  body {
+    overflow-x: hidden;
+  }
+}
+
+/* line 69, ../sass/screen.scss */
+*:focus {
+  outline: 0;
+}
+
+/* line 74, ../sass/screen.scss */
+::selection {
+  background-color: #222222;
+  color: #fafafa;
+}
+
+/* line 80, ../sass/screen.scss */
+::-moz-selection {
+  background-color: #222222;
+  color: #fafafa;
+}
+
+/***** Container ****/
+/* line 87, ../sass/screen.scss */
+.container {
+  min-height: 595px;
+  border-bottom: 1px dashed #fafafa;
+}
+
+/***** Header *****/
+/* line 94, ../sass/screen.scss */
+.head {
+  background: #222222;
+  width: 100%;
+  min-height: 50px;
+  top: 0;
+  z-index: 1100;
+  position: fixed;
+}
+@media only screen and (max-width: 600px) {
+  /* line 94, ../sass/screen.scss */
+  .head {
+    position: absolute;
+  }
+}
+
+/**** Header End *****/
+/* line 106, ../sass/screen.scss */
+.navbar {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+/* line 111, ../sass/screen.scss */
+.navbar .unlist li {
+  float: left;
+  width: 16%;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.6rem;
+  border-bottom: 2px solid #222222;
+}
+/* line 118, ../sass/screen.scss */
+.navbar .unlist li:hover {
+  border-bottom: 2px solid #d42a5c;
+}
+@media only screen and (max-width: 820px) {
+  /* line 111, ../sass/screen.scss */
+  .navbar .unlist li {
+    font-size: 1.3rem;
+    width: 33%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 111, ../sass/screen.scss */
+  .navbar .unlist li {
+    display: none;
+  }
+}
+
+/* line 127, ../sass/screen.scss */
+.bt-menu {
+  font-size: 1.6rem;
+  line-height: 50px;
+  display: none;
+  border: none;
+}
+@media only screen and (max-width: 600px) {
+  /* line 127, ../sass/screen.scss */
+  .bt-menu {
+    display: block;
+  }
+}
+
+/* line 135, ../sass/screen.scss */
+.icons {
+  width: 16px;
+}
+
+/* line 139, ../sass/screen.scss */
+.video-bg {
+  z-index: -1000;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: auto;
+  position: fixed;
+}
+@media only screen and (max-width: 600px) {
+  /* line 139, ../sass/screen.scss */
+  .video-bg {
+    width: auto;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 820px) {
+  /* line 139, ../sass/screen.scss */
+  .video-bg {
+    width: auto;
+    height: auto;
+  }
+}
+
+/***** SLIDES GOES FROM HERE *****/
+/****** SLIDE 1 *********/
+/* line 159, ../sass/screen.scss */
+.slide1 {
+  min-height: 600px;
+  background: linear-gradient(135deg, rgba(0, 0, 255, 0.88) 0%, rgba(205, 67, 100, 0.89) 100%);
+  background-repeat: repeat, repeat, no-repeat;
+  background-position: center center;
+  -webkit-background-size: 100%, 15%, cover;
+  background-size: 100%, 15%, cover;
+  border-bottom: 1px dashed #fafafa;
+}
+
+/****** SLIDE 1 OVER *********/
+/****** SLIDE 2 *********/
+/* line 174, ../sass/screen.scss */
+.slide2 {
+  min-height: 600px;
+  border-bottom: 1px dashed #fafafa;
+}
+
+/****** SLIDE 2 OVER*********/

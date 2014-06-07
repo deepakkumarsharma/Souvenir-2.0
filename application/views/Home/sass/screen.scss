@@ -1,0 +1,179 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+
+/***** Mixins ******/
+
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media  only screen
+            and (max-width: 600px)  {@content;}
+}
+@else if $point == medium {
+    @media only screen
+        and (max-width: 820px) { @content; }
+}
+@else if $point == larger {
+    @media only screen
+        and (max-width: 1100px)  { @content; }
+  }
+}
+
+/***** Colors *******/
+
+$black:#222;
+$lessblack:#333;
+$lesserblack:#444;
+$darkblue: #0084cd;
+$blue:#52ADDA;
+$lessblue:#68B8DF;
+$grey:#C9C9C9;
+$lessgrey:#DBDBDB;
+$white:#fafafa;
+$darkpink:#cb2c54;
+$pink:#d42a5c;
+$lesserpink:#ec4c64;
+$redpink: #E96D63;
+
+
+/***** Color-Ends *****/
+
+
+/***************** SASSY BEGINS ***************/
+
+a{
+    text-decoration:none;
+    color:white;
+    &:hover{@include single-text-shadow(1px,1px);}
+}
+
+html
+{
+    font-size:62.5%;
+}
+
+body
+{
+    font-family:'Open Sans', sans-serif;
+    font-size:1.6rem;
+    @include breakpoint(small){overflow-x:hidden;}
+}
+
+*:focus {
+    outline: 0;
+}
+
+::selection
+{
+    background-color: $black;
+    color:$white;
+}
+
+::-moz-selection
+{
+    background-color: $black;
+    color:$white;
+}
+
+/***** Container ****/
+
+.container {
+    min-height:595px;
+    border-bottom:1px dashed $white;
+}
+
+/***** Header *****/
+
+.head {
+    background:$black;
+    width:100%;
+    min-height:50px;
+    top:0;
+    z-index:1100;
+    position:fixed;
+    @include breakpoint(small) { position:absolute;}
+}
+
+/**** Header End *****/
+
+.navbar {
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    .unlist {
+        li {
+            float:left;
+            width:16%;
+            text-align:center;
+            line-height:50px;
+            font-size:1.6rem;
+            border-bottom:2px solid $black;
+            &:hover{border-bottom:2px solid $pink;
+            }
+            @include breakpoint(large) {font-size:1.4rem; float:right; width:136px;}
+            @include breakpoint(medium) {font-size:1.3rem; width:33%;}
+            @include breakpoint(small) {display:none;}
+        }
+        }
+}
+
+.bt-menu {
+    font-size:1.6rem;
+    line-height:50px;
+    display:none;
+    border:none;
+    @include breakpoint(small){display:block;}
+} 
+
+.icons {
+    width:16px;
+}
+
+.video-bg {
+    z-index:-1000;
+    top: 0;
+    left: 0;  
+    width:auto;
+    height:auto;
+    position: fixed;
+    @include breakpoint(small) {width: auto; height:auto;}
+    @include breakpoint(medium) {width: auto; height:auto;}
+    @include breakpoint(large) {width: auto; height:auto;}
+        .pg1_head {
+        
+        }
+}
+
+
+/***** SLIDES GOES FROM HERE *****/
+
+/****** SLIDE 1 *********/
+
+.slide1 {
+    min-height:600px;
+    background: linear-gradient(135deg, rgba(0,0,255,0.88) 0%,rgba(205,67,100,0.89) 100%);
+    background-repeat: repeat, repeat, no-repeat;
+    background-position: center center;
+    -webkit-background-size: 100%, 15%, cover;
+    background-size: 100%, 15%, cover;
+    border-bottom:1px dashed $white;
+}
+
+
+/****** SLIDE 1 OVER *********/
+
+/****** SLIDE 2 *********/
+
+.slide2 {
+    min-height:600px;
+    border-bottom:1px dashed $white;
+}
+
+/****** SLIDE 2 OVER*********/
