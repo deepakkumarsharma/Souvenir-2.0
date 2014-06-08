@@ -219,7 +219,7 @@ body {
 
 /***** SLIDES GOES FROM HERE *****/
 /****** SLIDE 1 *********/
-/* line 159, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 .slide1 {
   min-height: 600px;
   background: linear-gradient(135deg, rgba(0, 0, 255, 0.88) 0%, rgba(205, 67, 100, 0.89) 100%);
@@ -232,7 +232,7 @@ body {
 
 /****** SLIDE 1 OVER *********/
 /****** SLIDE 2 *********/
-/* line 174, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .slide2 {
   min-height: 600px;
   border-bottom: 1px dashed #fafafa;
