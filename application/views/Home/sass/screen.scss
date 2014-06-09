@@ -155,11 +155,6 @@ body
 
 .slide1 {
     min-height:600px;
-    background: linear-gradient(135deg, rgba(0,0,255,0.88) 0%,rgba(205,67,100,0.89) 100%);
-    background-repeat: repeat, repeat, no-repeat;
-    background-position: center center;
-    -webkit-background-size: 100%, 15%, cover;
-    background-size: 100%, 15%, cover;
     border-bottom:1px dashed $white;
 }
 
@@ -169,6 +164,11 @@ body
 /****** SLIDE 2 *********/
 
 .slide2 {
+    min-height:600px;
+    border-bottom:1px dashed $white;
+}
+
+.slide3 {
     min-height:600px;
     border-bottom:1px dashed $white;
 }
