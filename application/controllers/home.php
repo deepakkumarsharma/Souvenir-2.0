@@ -9,7 +9,6 @@ class Home extends CI_Controller {
 	}
 	public function feedback(){
 		$this->load->helper('url');		
-		$this->load->view('Feedback/feedback.php');
 		$this->load->view('Home/header.php');		
 	}
 }

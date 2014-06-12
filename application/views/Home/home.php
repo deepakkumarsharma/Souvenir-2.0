@@ -1,8 +1,9 @@
-<!-- Home.html  
+<!-- Home.php
 	This is main home page. Sass is used for css and it is in 
 	application/views/Home/stylesheets/screen.sass and changes
 	are made in screen.css
 -->
+
 <html>
 <head>
 	<title>Sovuenir</title>
@@ -31,6 +32,15 @@
 <!-- Slide 3 -->
 <div class="slide3">
 </div>
+
+<!-- Slide 4 -->
+<div class="slide3">
+</div>
+
+<!-- Slide 5 -->
+<div class="slide3">
+</div>
+
 </body>
 </html>		
 

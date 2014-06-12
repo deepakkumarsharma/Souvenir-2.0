@@ -218,25 +218,43 @@ body {
 }
 
 /***** SLIDES GOES FROM HERE *****/
-/****** SLIDE 1 *********/
+/**************** SLIDE 1 ******************/
 /* line 156, ../sass/screen.scss */
 .slide1 {
   min-height: 600px;
   border-bottom: 1px dashed #fafafa;
 }
 
-/****** SLIDE 1 OVER *********/
-/****** SLIDE 2 *********/
+/*************** SLIDE 1 OVER **************/
+/**************** SLIDE 2 ******************/
 /* line 166, ../sass/screen.scss */
 .slide2 {
   min-height: 600px;
   border-bottom: 1px dashed #fafafa;
 }
 
-/* line 171, ../sass/screen.scss */
+/************** SLIDE 2 OVER ***************/
+/************** SLIDE 3 ********************/
+/* line 175, ../sass/screen.scss */
 .slide3 {
   min-height: 600px;
   border-bottom: 1px dashed #fafafa;
 }
 
-/****** SLIDE 2 OVER*********/
+/************** SLIDE 3 Over ****************/
+/************** SLIDE 4 *********************/
+/* line 184, ../sass/screen.scss */
+.slide4 {
+  min-height: 600px;
+  border-bottom: 1px dashed #fafafa;
+}
+
+/*************** SLIDE 4 OVER ***************/
+/************** SLIDE 5 *********************/
+/* line 193, ../sass/screen.scss */
+.slide5 {
+  min-height: 600px;
+  border-bottom: 1px dashed #fafafa;
+}
+
+/************** SLIDE 5 *********************/
