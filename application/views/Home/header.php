@@ -29,7 +29,7 @@
 		<ul class="unlist1">
 			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
 			<li><a href="#">Gallery</a></li>
-			<li><a href="#">Form</a></li>
+			<li><a href="<?php echo base_url();?>index.php/Form/form.php">Form</a></li>
 			<li><a href="#">Register</a></li>
 			<li><a href="#">Sign-in</a></li>
 			<li><a href="<?php echo base_url();?>index.php/home/feedback">Feedback</a></li>

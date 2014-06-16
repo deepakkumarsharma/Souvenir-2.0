@@ -1,5 +1,5 @@
 /* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
+/ * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
@@ -14,7 +14,7 @@
 @mixin breakpoint($point) {
     @if $point == small {
         @media  only screen
-            and (max-width: 600px)  {@content;}
+            and (max-width: 600px)  { @content; }
 }
 @else if $point == medium {
     @media only screen
@@ -86,7 +86,7 @@ body
 
 .container {
     min-height:595px;
-    border-bottom:1px dashed $white;
+
 }
 
 /***** Header *****/
@@ -136,7 +136,7 @@ body
     width:16px;
 }
 
-.video-bg {
+.video-triangle {
     z-index:-1000;
     top: 0;
     left: 0;  
@@ -154,17 +154,61 @@ body
 /**************** SLIDE 1 ******************/
 
 .slide1 {
-    min-height:600px;
+    min-height:100%;
     border-bottom:1px dashed $white;
+    .s1sec {
+        display: block;
+        width:100%;
+        height:100%;
+        overflow:hidden;
+        opacity:0.88;
+    }   
+$grad1:linear-gradient(#FF0040,#FF4000);
+$grad2:-o-linear-gradient(#FF0040,#FF4000);
+$grad3:-moz-linear-gradient(#FF0040,#FF4000);
+$grad4:-webkit-linear-gradient(#FF0040,#FF4000);
+
+.s1div:nth-child(odd) {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    transform: rotate(25deg);
+
+    background: $grad4;
+    background: $grad2;
+    background: $grad3;
+    background: $grad1;
+    
+    height:195%;
+    width:58%;
+    float:left;
+    margin-top:-20%;
+    margin-left:-15%;
+    @include breakpoint(small) {-webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    margin-left:-10%;
+    }
+    .h3 {
+        color: #ffffff;
+    }
 }
-
-
+   
+.s1div:nth-child(even) {
+    height:100%;
+    width:39%;
+    float:right;
+}      
+}
 /*************** SLIDE 1 OVER **************/
 
 /**************** SLIDE 2 ******************/
 
 .slide2 {
-    min-height:600px;
+    height:100%;
     border-bottom:1px dashed $white;
 }
 
@@ -173,7 +217,7 @@ body
 /************** SLIDE 3 ********************/
 
 .slide3 {
-    min-height:600px;
+    height:100%;
     border-bottom:1px dashed $white;
 }
 
@@ -182,7 +226,7 @@ body
 /************** SLIDE 4 *********************/
 
 .slide4 {
-    min-height:600px;
+    height:100%;
     border-bottom:1px dashed $white;
 }
 
@@ -191,8 +235,223 @@ body
 /************** SLIDE 5 *********************/
 
 .slide5 {
-    min-height:600px;
-    border-bottom:1px dashed $white;
+    height:100%;
+    .aboutHeader {
+        background-color: $blue;
+        height: 20%;
+        @include breakpoint(small) { height: 15;}
+        @include breakpoint(medium) {height: 28%;}
+        @include breakpoint(large) {height: 20%;}
+    }
+
+    .slide5Heading {
+        padding:26px 35px;
+        color:$white;
+        padding-top:22px;
+        text-align:center;
+        font-weight:500;
+        font-size:4rem;
+        @include breakpoint(medium) {font-weight:500; font-size:4rem;}
+        @include breakpoint(small) {font-weight:450; font-size:3rem;}
+    }
+
+/** Parent Classes **/
+
+    .sectionContainer {
+        display: block;
+        width: 100%;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px #000;
+    }
+
+    .bg-section {
+        width:100%;
+        height:100%;
+        position:relative;
+        display:block;
+        opacity: 0.88;
+        background-repeat:no-repeat;
+        background-position:center; 
+        background-size: 100% 100%;
+    }
+    .section {
+        width: 50%;
+        height: 260px;
+        position: relative;
+        float: left;
+        overflow: hidden;
+    }
+
+    .contentArea {
+        margin: 50px 100px 0px 100px;
+    }
+
+    .black {
+        background: $black;
+    }
+
+    .blue {
+        background: $lessblue;
+        opacity: 0.88;
+    }
+
+    .triangle {
+        position: absolute;
+        display: block;
+        bottom: 0px;
+        width: 0px;
+        height: 0px;
+        opacity: 0.99;
+        border-top: 132px solid transparent;
+        border-bottom: 132px solid transparent;
+        @include breakpoint(small) {display:none;}
+    }
 }
 
-/************** SLIDE 5 *********************/
+/** Parent Classes Over **/
+
+
+/******** Part 1 *******/
+
+.section1 {
+    @extend .section; 
+}
+
+.section2 {
+    @extend .section;
+}
+
+.sectionPink {
+    @extend .blue;
+}
+
+.bg1-section {
+    @extend .bg-section;
+    background-image: url("#");
+}
+
+.triangle1 {
+    @extend .triangle;
+    right: 0px;
+    border-right: 50px solid $lessblue;
+
+}
+/******** Part 1 Over *******/
+
+/******** Part 2 *******/
+
+.section1 {
+    @extend .section; 
+}
+
+.section2 {
+    @extend .section;
+}
+
+.sectionPink {
+    @extend .blue;
+}
+
+.bg2-section {
+    @extend .bg-section;
+    background-image: url("#");
+}
+
+.triangle2 {
+    @extend .triangle;
+    left: 0px;
+    border-left: 50px solid $lessblue;
+
+}
+/******** Part 2 Over *******/
+
+
+/******** Part 3 *******/
+
+.section1 {
+    @extend .section; 
+}
+
+.section2 {
+    @extend .section;
+}
+
+.sectionPink {
+    @extend .blue;
+}
+
+.bg3-section {
+    @extend .bg-section;
+    background-image: url("#");
+}
+
+.triangle3 {
+    @extend .triangle;
+    right: 0px;
+    border-right: 50px solid $lessblue;
+    @include breakpoint(small) {display: none;}
+
+}
+/******** Part 3 Over *******/
+
+/******** Part 4 *******/
+
+.section1 {
+    @extend .section; 
+}
+
+.section2 {
+    @extend .section;
+}
+
+.sectionPink {
+    @extend .blue;
+}
+
+.bg4-section {
+    @extend .bg-section;
+    background-image: url("#");
+}
+
+.triangle4 {
+    @extend .triangle;
+    left: 0px;
+    border-left: 50px solid $lessblue;
+
+}
+/******** Part 4 Over *******/
+
+/************** SLIDE 5 OVER *********************/
+
+
+/********* Footer Page **********/
+
+.picture {
+    height: 550px;
+    background-image:url("tasveer/gne.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    @include background-size(cover);
+    @include breakpoint(small) {display:none;};
+    .picture-text {
+        padding-top:90px;
+        width:100%;
+        height:auto;
+    }
+}
+
+footer {
+    padding-top: 60px;
+    min-height:100px;
+    background:$lessblack;
+}
+
+.footer-text{
+    padding:15px 15px;
+    color:$grey;
+    font-size:1.4rem;
+    line-height:2.1rem;
+}
+
+/********* Footer Page Ends **********/
