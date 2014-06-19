@@ -12,6 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 <body>
+	<!-- Validations -->
+<?php echo validation_errors(); ?>
+<?php echo form_open('register'); ?>	
+	<!-- Validations Over -->
 	<div class="container register">
 		<header class="header">
 			<h1 class="heading1">Register</h1>
@@ -19,10 +23,10 @@
         <div class="s_data shrink">
             <div class="content id_first-slide-text">
             	<form class="register">
-					<input type="text" class="name" placeholder="Name"><br>
-					<input type="email" class="eMail" placeholder="E-mail"><br>
-					<input type="password" class="pass" placeholder="Password"><br>
-					<input type="password" class="cPass" placeholder="Confirm Password"><br><br>  
+					<input type="text" class="name" name="Name"  pattern="[a-zA-Z]{5,}" title="Characters Only." placeholder="Name" required /><br>
+					<input type="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address" required /><br>
+					<input type="password" class="pass" name="Password" onchange="form.Passconf.pattern = this.value;" placeholder="Password"  pattern="[a-zA-Z0-9]{8,}" title="Minimum 8 letters or numbers." required /><br>
+					<input type="password" class="cPass" name="Passconf" placeholder="Confirm Password" pattern="[a-zA-Z0-9]{8,}" title="Re-type Password" required /><br><br>  
 					<p style="text-align: center;"><input type='submit' class="submit" value='Register'/></p>
 				</form>	
             </div>

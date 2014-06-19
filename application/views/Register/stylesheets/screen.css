@@ -156,13 +156,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* line 88, ../sass/screen.scss */
 .shrink {
-  max-width: 1120px;
+  max-width: 1150px;
   margin: auto;
 }
 
 /* line 93, ../sass/screen.scss */
 .s_data {
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 /* line 97, ../sass/screen.scss */
