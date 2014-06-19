@@ -44,13 +44,9 @@
 
 <!-- Slide 4 -->
 <div class="slide4">
-</div>
-
-<!-- Slide 5 -->
-<div class="slide5">
 	<!-- header -->
 	<header class="aboutHeader">
-		<h1 class="slide5Heading">Nerds Behind This</h1>
+		<h1 class="slide4Heading">Nerds Behind This</h1>
 	</header>
 	<!-- header over -->
 

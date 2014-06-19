@@ -169,12 +169,7 @@ $grad3:-moz-linear-gradient(#FF0040,#FF4000);
 $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
 
 .s1div:nth-child(odd) {
-    -webkit-transform: rotate(25deg);
-    -moz-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    transform: rotate(25deg);
-
+    @include transform(rotate(25deg));
     background: $grad4;
     background: $grad2;
     background: $grad3;
@@ -184,14 +179,8 @@ $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
     width:58%;
     float:left;
     margin-top:-20%;
-    margin-left:-15%;
-    @include breakpoint(small) {-webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    transform: rotate(0deg);
-    margin-left:-10%;
-    }
+    margin-left:-23%;
+    @include breakpoint(small) {@include transform(rotate(0deg)); margin-left:-10%;}
     .h3 {
         color: #ffffff;
     }
@@ -227,15 +216,6 @@ $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
 
 .slide4 {
     height:100%;
-    border-bottom:1px dashed $white;
-}
-
-/*************** SLIDE 4 OVER ***************/
-
-/************** SLIDE 5 *********************/
-
-.slide5 {
-    height:100%;
     .aboutHeader {
         background-color: $blue;
         height: 20%;
@@ -244,7 +224,7 @@ $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
         @include breakpoint(large) {height: 20%;}
     }
 
-    .slide5Heading {
+    .slide4Heading {
         padding:26px 35px;
         color:$white;
         padding-top:22px;
@@ -428,7 +408,7 @@ $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
 
 .picture {
     height: 550px;
-    background-image:url("tasveer/gne.jpg");
+    background-image:url("#");
     background-repeat:no-repeat;
     background-attachment:fixed;
     background-size: 100% 100%;

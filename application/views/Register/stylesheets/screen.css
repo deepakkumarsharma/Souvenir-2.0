@@ -1,0 +1,307 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+/* line 17, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../lib/gems/1.8/gems/compass-0.12.6/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/***** Mixins ******/
+/***** Colors *******/
+/***** Color-Ends *****/
+/***************** SASSY BEGINS ***************/
+/******* Header *********/
+/* line 48, ../sass/screen.scss */
+.header {
+  height: 30%;
+  background: #52adda;
+}
+@media only screen and (max-width: 820px) {
+  /* line 48, ../sass/screen.scss */
+  .header {
+    height: 32%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 48, ../sass/screen.scss */
+  .header {
+    height: 23%;
+  }
+}
+/* line 53, ../sass/screen.scss */
+.header .heading1 {
+  padding-top: 6.5rem;
+  text-align: center;
+  font-size: 9rem;
+  font-weight: 23px;
+  color: #333333;
+}
+@media only screen and (max-width: 820px) {
+  /* line 53, ../sass/screen.scss */
+  .header .heading1 {
+    padding-top: 11rem;
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 53, ../sass/screen.scss */
+  .header .heading1 {
+    padding-top: 6rem;
+    font-size: 6rem;
+    font-weight: 15px;
+  }
+}
+
+/******* Header Over *********/
+/***** Parent Code *********/
+/* line 68, ../sass/screen.scss */
+.input, .register .name, .register .email, .register .pass, .register .cPass {
+  background: transparent;
+  font-size: 2.1rem;
+  text-align: center;
+  line-height: 3;
+  border: 5px solid transparent;
+  width: 100%;
+  height: 12.3%;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+@media only screen and (max-width: 820px) {
+  /* line 68, ../sass/screen.scss */
+  .input, .register .name, .register .email, .register .pass, .register .cPass {
+    text-align: left;
+    width: 85%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  /* line 68, ../sass/screen.scss */
+  .input, .register .name, .register .email, .register .pass, .register .cPass {
+    text-align: left;
+  }
+}
+
+/* line 82, ../sass/screen.scss */
+.container {
+  background-color: #dbdbdb;
+  height: 100%;
+}
+@media only screen and (max-width: 600px) {
+  /* line 82, ../sass/screen.scss */
+  .container {
+    min-height: 400px;
+  }
+}
+
+/* line 88, ../sass/screen.scss */
+.shrink {
+  max-width: 1120px;
+  margin: auto;
+}
+
+/* line 93, ../sass/screen.scss */
+.s_data {
+  padding-top: 50px;
+}
+
+/* line 97, ../sass/screen.scss */
+.content {
+  width: 50%;
+  float: left;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 600px) {
+  /* line 97, ../sass/screen.scss */
+  .content {
+    width: 90%;
+    clear: both;
+  }
+}
+
+/******* Parent ends *******/
+/* line 106, ../sass/screen.scss */
+.register {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+}
+/* line 127, ../sass/screen.scss */
+.register .submit {
+  font-size: 2.1rem;
+  background: #52adda;
+  border: 0;
+  width: 250px;
+  height: 60px;
+  border-radius: 3px;
+  color: white;
+  curson: pointer;
+  -webkit-transition: background 0.5s ease-in-out;
+  -moz-transition: background 0.5s ease-in-out;
+  -o-transition: background 0.5s ease-in-out;
+  transition: background 0.5s ease-in-out;
+}
+/* line 137, ../sass/screen.scss */
+.register .submit:hover {
+  background: #222222;
+}
+
+/****** Keep Calm *******/
+/* line 146, ../sass/screen.scss */
+.keepCalm {
+  float: right;
+  display: inline-block;
+  height: 290px;
+  margin: 80px 10rem 0;
+  width: 195px;
+  border: 5px solid #444444;
+  padding: 0.80rem 2rem .75rem;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.4), 0 5px 10px rgba(0, 0, 0, 0.6);
+  background-color: #52adda;
+  background: linear-gradient(top, #52adda 0%, #68b8df 100%);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  transform-origin: 50% -65px;
+  animation: swing 1.5s infinite alternate ease-in-out;
+}
+@media only screen and (max-width: 820px) {
+  /* line 146, ../sass/screen.scss */
+  .keepCalm {
+    margin: 80px 4rem 0;
+  }
+}
+/* line 163, ../sass/screen.scss */
+.keepCalm:hover {
+  animation-play-state: paused;
+}
+/* line 167, ../sass/screen.scss */
+.keepCalm .p {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 0 2px black;
+  margin: 0 auto;
+  line-height: normal;
+}
+@media only screen and (max-width: 600px) {
+  /* line 146, ../sass/screen.scss */
+  .keepCalm {
+    display: none;
+  }
+}
+
+/* line 179, ../sass/screen.scss */
+.iris IMG {
+  display: block;
+  width: 6.5rem;
+  margin: auto;
+}
+
+/* line 185, ../sass/screen.scss */
+.iris P {
+  font-size: 3.1rem;
+}
+
+/* line 189, ../sass/screen.scss */
+.iris:before {
+  position: absolute;
+  content: "";
+  border: 2px dotted #444;
+  border-bottom: none;
+  border-left: none;
+  width: 100px;
+  height: 100px;
+  top: -55px;
+  left: 50%;
+  margin-left: -50px;
+  transform: rotate(-45deg);
+  border-radius: 0 5px 0 0;
+}
+
+/* line 204, ../sass/screen.scss */
+.iris:after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: -75px;
+  left: 50%;
+  margin-left: -4px;
+  background: #4c4c4c;
+  background: linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
+}
+
+@keyframes swing {
+  /* line 218, ../sass/screen.scss */
+  0% {
+    transform: rotate(-3deg);
+  }
+
+  /* line 219, ../sass/screen.scss */
+  100% {
+    transform: rotate(3deg);
+  }
+}
