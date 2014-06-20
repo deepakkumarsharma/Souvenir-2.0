@@ -10,7 +10,11 @@ class register extends CI_Controller {
 		if ($this->form_validation->run() == FALSE) {
 		$this->load->view('Register/register.php');
 		$this->load->view('Home/header.php');
-		}				
+		} else { 
+			$this->Register_model->register_user();
+			$this->load->view('Register/register_done.php');
+			$this->load->view('Home/header.php');
+		}			
 	}
 }
 ?>

@@ -305,3 +305,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     transform: rotate(3deg);
   }
 }
+
+/******** Registeration_done *******/
+/* line 225, ../sass/screen.scss */
+.register_done {
+  width: 100%;
+  height: 100%;
+}
+/* line 228, ../sass/screen.scss */
+.register_done .thank {
+  font-size: 4rem;
+}
+
+/******** Registeration_done Over*******/
