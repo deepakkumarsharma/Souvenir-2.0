@@ -14,11 +14,11 @@
 <body>
 	<div class="container register">
 		<header class="header">
-			<h1 class="heading1">Registeration Done</h1>
+			<h1 class="heading1">Success</h1>
 		</header>
 		<div class="register_done">
 			<h1 class="thank">
-				You Have Sucessfully Registered. Please! Confirm Your Email. 
+				You Have Sucessfully Registered.<br>Please! Confirm Your Email. 
 			</h1>
 		</div>
 	</div>
