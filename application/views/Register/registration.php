@@ -13,8 +13,7 @@
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 <body>
 <!-- Validations Codeigniter  -->
-<?php echo validation_errors(); ?>
-<?php echo form_open('form'); ?>
+<?php echo form_open(); ?>
 <!-- Valdiations Over -->
 	<div class="container register">
 		<header class="header">

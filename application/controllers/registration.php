@@ -4,10 +4,10 @@ class Registration extends CI_Controller {
 	public function index() {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
-		$this->form_validation->set_rules('name', 'Username', 'required');
-		$this->form_validation->set_rules('password', 'Password', 'required');
-		$this->form_validation->set_rules('passconf', 'Password Confirmation', 'required');
-		$this->form_validation->set_rules('email', 'Email', 'required');
+		$this->form_validation->set_rules('Name', 'Username', 'required');
+		$this->form_validation->set_rules('Password', 'Password', 'required');
+		$this->form_validation->set_rules('Passconf', 'Password Confirmation', 'required');
+		$this->form_validation->set_rules('Email', 'Email', 'required');
 		$this->load->helper('url');
 		
 		if ($this->form_validation->run() == FALSE) {

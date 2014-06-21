@@ -21,5 +21,6 @@
 				You Have Sucessfully Registered.<br>Please! Confirm Your Email. 
 			</h1>
 		</div>
-	</div>
-		
+	</div>	
+</body>
+</html>
