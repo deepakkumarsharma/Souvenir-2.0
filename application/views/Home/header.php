@@ -1,4 +1,4 @@
-<!-- Header.php  
+ <!-- Header.php  
 	This is main header file. Sass is used for css and it is in 
 	application/views/Home/stylesheets/screen.sass and changes
 	are made in screen.css
@@ -20,7 +20,7 @@
 			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
 			<li><a href>Gallery</a></li>
 			<li><a href>Form</a></li>
-			<li><a href="<?php echo base_url();?>index.php/register">Register</a></li>
+			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href>Sign-in</a></li>
 			<li><a href>Feedback</a></li>
 		</ul>
@@ -30,7 +30,7 @@
 			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
 			<li><a href="#">Gallery</a></li>
 			<li><a href=>Form</a></li>
-			<li><a href="<?php echo base_url();?>index.php/register">Register</a></li>
+			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="#">Sign-in</a></li>
 			<li><a href>Feedback</a></li>
 		</ul>

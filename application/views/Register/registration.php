@@ -12,10 +12,10 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 <body>
-	<!-- Validations -->
+<!-- Validations Codeigniter  -->
 <?php echo validation_errors(); ?>
-<?php echo form_open('register'); ?>	
-	<!-- Validations Over -->
+<?php echo form_open('register_model/submit'); ?>
+<!-- Valdiations Over -->
 	<div class="container register">
 		<header class="header">
 			<h1 class="heading1">Register</h1>

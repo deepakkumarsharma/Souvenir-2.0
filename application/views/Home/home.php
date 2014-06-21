@@ -40,8 +40,8 @@
 
 <!-- Slide 3 -->
 <div class="slide3">
-<div class="slide2_container" >
-        <div class="slide2_images">
+<div class="slide3_container" >
+        <div class="slide3_images">
             <div class="images" id="one">
                 <div class="img_text">
                     <h1 class="heading">First</h1>
