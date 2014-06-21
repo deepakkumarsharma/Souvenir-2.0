@@ -40,6 +40,40 @@
 
 <!-- Slide 3 -->
 <div class="slide3">
+<div class="slide2_container" >
+        <div class="slide2_images">
+            <div class="images" id="one">
+                <div class="img_text">
+                    <h1 class="heading">First</h1>
+                    <p class="paragraph">This is the first slide</p> 
+                </div>
+            </div>
+            <div class="images" id="two">
+                <div class="img_text">
+                    <h1 class="heading">Second</h1>
+                    <p class="paragraph">This is the second slide</p>
+                </div>
+            </div>
+            <div class="images" id="three"> 
+                <div class="img_text">
+                    <h1 class="heading">Third</h1>
+                    <p class="paragraph">This is the third slide</p>
+                </div>
+            </div>
+            <div class="images" id="four">
+                <div class="img_text">
+                    <h1 class="heading">Fourth</h1>
+                    <p class="paragraph">This is the fourth slide</p>
+                </div>
+            </div>
+            <div class="images" id="five">
+                <div class="img_text">
+                    <h1 class="heading">Five</h1>
+                    <p class="paragraph">This is the fiveth slide</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <!-- Slide 4 -->
