@@ -166,14 +166,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* line 97, ../sass/screen.scss */
-.content {
+.content, .content1 {
   width: 50%;
   float: left;
   margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
   /* line 97, ../sass/screen.scss */
-  .content {
+  .content, .content1 {
     width: 90%;
     clear: both;
   }
@@ -307,14 +307,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /******** Registeration_done *******/
-/* line 225, ../sass/screen.scss */
-.register_done {
-  width: 100%;
-  height: 100%;
-}
-/* line 228, ../sass/screen.scss */
-.register_done .thank {
-  font-size: 2.5rem;
+/* line 227, ../sass/screen.scss */
+.content1 .heading2 {
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 350;
+  padding-top: 7.2rem;
 }
 
 /******** Registeration_done Over*******/
