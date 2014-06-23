@@ -19,7 +19,7 @@ class Email_model extends CI_Model {
 		$this->email->from('deeky.sharma@gmail.com', "iH8sum3r");
 		$this->email->to($email);		
 		$this->email->subject("Yaadein Email Verification");
-		$this->email->message("Dear User,\nPlease click on below URL or paste into your browser to verify your Email Address\n\n http://localhost/~deepak/Souvenir-2.0/index.php/registration/verify/".$verificationText."\n"."\n\nThanks\nD33Pak");
+		$this->email->message("Dear User,\nPlease click on below URL or paste into your browser to verify your Email Address\n\n http://localhost/~deepak/Souvenir-2.0/index.php/registration/verifyEmailAddress/".$verificationText."\n"."\n\nThanks\nDeePak");
 
 		$this->email->send();
 		
