@@ -21,7 +21,7 @@
 		</header>
         <div class="s_data shrink">
             <div class="content id_first-slide-text">
-            	<form class="register" method="post" accept-charset="utf-8" action="http://localhost/~deepak/Souvenir-2.0/index.php/registration">
+            	<form class="register" method="post" accept-charset="utf-8" action="<?php echo base_url();?>Souvenir-2.0/index.php/registration">
 					<input type="text" class="name" name="Name"  pattern="[a-zA-Z]{5,}" title="Characters Only." placeholder="Name" required /><br>
 					<input type="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address" required /><br>
 					<input type="password" class="pass" name="Password" onchange="form.Passconf.pattern = this.value;" placeholder="Password"  pattern="[a-zA-Z0-9]{8,}" title="Minimum 8 letters or numbers." required /><br>

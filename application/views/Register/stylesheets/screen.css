@@ -96,6 +96,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   text-align: center;
   font-size: 9rem;
   font-weight: 23px;
+  font-family: Pacifico;
   color: #333333;
 }
 @media only screen and (max-width: 820px) {
@@ -116,7 +117,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /******* Header Over *********/
 /***** Parent Code *********/
-/* line 68, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .input, .register .name, .register .email, .register .pass, .register .cPass {
   background: transparent;
   font-size: 2.1rem;
@@ -129,50 +130,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media only screen and (max-width: 820px) {
-  /* line 68, ../sass/screen.scss */
+  /* line 69, ../sass/screen.scss */
   .input, .register .name, .register .email, .register .pass, .register .cPass {
     text-align: left;
     width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 68, ../sass/screen.scss */
+  /* line 69, ../sass/screen.scss */
   .input, .register .name, .register .email, .register .pass, .register .cPass {
     text-align: left;
   }
 }
 
-/* line 82, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 .container {
   background-color: #dbdbdb;
   height: 100%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 82, ../sass/screen.scss */
+  /* line 83, ../sass/screen.scss */
   .container {
     min-height: 400px;
   }
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 .shrink {
   max-width: 1150px;
   margin: auto;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .s_data {
   padding-top: 30px;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .content, .content1 {
   width: 50%;
   float: left;
   margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 97, ../sass/screen.scss */
+  /* line 98, ../sass/screen.scss */
   .content, .content1 {
     width: 90%;
     clear: both;
@@ -180,13 +181,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /******* Parent ends *******/
-/* line 106, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .register {
   background: transparent;
   height: 100%;
   width: 100%;
 }
-/* line 127, ../sass/screen.scss */
+/* line 128, ../sass/screen.scss */
 .register .submit {
   font-size: 2.1rem;
   background: #52adda;
@@ -201,13 +202,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-/* line 137, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .register .submit:hover {
   background: #222222;
 }
 
 /****** Keep Calm *******/
-/* line 146, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .keepCalm {
   float: right;
   display: inline-block;
@@ -226,16 +227,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   animation: swing 1.5s infinite alternate ease-in-out;
 }
 @media only screen and (max-width: 820px) {
-  /* line 146, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   .keepCalm {
     margin: 80px 4rem 0;
   }
 }
-/* line 163, ../sass/screen.scss */
+/* line 164, ../sass/screen.scss */
 .keepCalm:hover {
   animation-play-state: paused;
 }
-/* line 167, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 .keepCalm .p {
   text-transform: uppercase;
   font-weight: bold;
@@ -246,25 +247,25 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   line-height: normal;
 }
 @media only screen and (max-width: 600px) {
-  /* line 146, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   .keepCalm {
     display: none;
   }
 }
 
-/* line 179, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .iris IMG {
   display: block;
   width: 6.5rem;
   margin: auto;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .iris P {
   font-size: 3.1rem;
 }
 
-/* line 189, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .iris:before {
   position: absolute;
   content: "";
@@ -280,7 +281,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   border-radius: 0 5px 0 0;
 }
 
-/* line 204, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .iris:after {
   position: absolute;
   content: "";
@@ -295,20 +296,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 @keyframes swing {
-  /* line 218, ../sass/screen.scss */
+  /* line 219, ../sass/screen.scss */
   0% {
     transform: rotate(-3deg);
   }
 
-  /* line 219, ../sass/screen.scss */
+  /* line 220, ../sass/screen.scss */
   100% {
     transform: rotate(3deg);
   }
 }
 
 /******** Registeration_done *******/
-/* line 227, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 .content1 .heading2 {
+  font-family: Pacifico;
   text-align: center;
   font-size: 3.6rem;
   font-weight: 350;

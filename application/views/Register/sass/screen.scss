@@ -55,6 +55,7 @@ $white:#fafafa;
         text-align: center;
         font-size: 9rem;
         font-weight: 23px;
+        font-family:Pacifico;
         color: $lessblack;
         @include breakpoint(medium){padding-top:11rem; font-size: 6rem;}
         @include breakpoint(small){padding-top:6rem; font-size: 6rem; font-weight: 15px;}
@@ -225,6 +226,7 @@ $white:#fafafa;
 .content1 {
     @extend .content;
     .heading2 {
+        font-family:Pacifico;
         text-align: center;
         font-size: 3.6rem;
         font-weight: 350;
