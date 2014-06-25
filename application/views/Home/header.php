@@ -21,7 +21,7 @@
 			<li><a href>Gallery</a></li>
 			<li><a href>Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
-			<li><a href>Sign-in</a></li>
+			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href>Feedback</a></li>
 		</ul>
 		<nav id="bt-menu" class="bt-menu">
@@ -31,13 +31,8 @@
 			<li><a href="#">Gallery</a></li>
 			<li><a href=>Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
-			<li><a href="#">Sign-in</a></li>
+			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href>Feedback</a></li>
-		</ul>
-		
-		<ul>
-			<li><a href="" class="bt-icon icon-gplus">Google+</a></li>
-			<li><a href="" class="bt-icon icon-facebook">Facebook</a></li>
 		</ul>
 		</nav>
 		</nav>		

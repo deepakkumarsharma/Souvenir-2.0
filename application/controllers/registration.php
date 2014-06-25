@@ -27,14 +27,10 @@ class Registration extends CI_Controller {
 		}
 	}
 
-	public function verifyEmailAddress($verificationText) {	
-		$this->load->view('Register/confirm.php');
-		$this->load->view('Home/header.php');
+	public function verifyEmailAddress($verificationText) {
 		$sql = "update register set active_status='Y' WHERE email_verification_code=?";
 		$this->db->query($sql, array($verificationText));
-		return $this->db->affected_rows();	
-
-
+		return $this->db->affected_rows();
 	}
 }	
 ?>

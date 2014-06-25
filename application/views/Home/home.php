@@ -24,9 +24,8 @@
 <!-- Slide 1 -->
 <div class="slide1">
     <section class="s1sec">
-        <div class="s1div">                                  
-        </div>
         <div class="s1div">
+        	<img src="stylesheet/tasveer/logo.png" alt="logo" class="img1">
         	<h1 class="s1Heading">Souvenir</h1>
             <p class="s1tagline">Be like a photographer. Get your vision right, keep yourself focus, zoom in on your goals and your success will be a souvenir</p>
         </div>
@@ -34,48 +33,65 @@
 </div>
 
 <!-- Slide 1 Over -->
+
 <!-- Slide 2 -->
 <div class="slide2">
 </div>
+<!-- Slide 2 over -->
 
 <!-- Slide 3 -->
-<div class="slide3">
-<div class="slide3_container" >
-        <div class="slide3_images">
-            <div class="images" id="one">
-                <div class="img_text">
-                    <h1 class="heading">First</h1>
-                    <p class="paragraph">This is the first slide</p> 
-                </div>
-            </div>
-            <div class="images" id="two">
-                <div class="img_text">
-                    <h1 class="heading">Second</h1>
-                    <p class="paragraph">This is the second slide</p>
-                </div>
-            </div>
-            <div class="images" id="three"> 
-                <div class="img_text">
-                    <h1 class="heading">Third</h1>
-                    <p class="paragraph">This is the third slide</p>
-                </div>
-            </div>
-            <div class="images" id="four">
-                <div class="img_text">
-                    <h1 class="heading">Fourth</h1>
-                    <p class="paragraph">This is the fourth slide</p>
-                </div>
-            </div>
-            <div class="images" id="five">
-                <div class="img_text">
-                    <h1 class="heading">Five</h1>
-                    <p class="paragraph">This is the fiveth slide</p>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="slide3" >
+   <div id="slider1" class="csslider">
+       <input type="radio" name="slides" id="slides_1" checked/>
+       <input type="radio" name="slides" id="slides_2"  />
+       <input type="radio" name="slides" id="slides_3" />
+       <input type="radio" name="slides" id="slides_4" />
+       <ul>
+           <li>
+               <div id="bg1" class="bg">
+                   <div>
+                       <h1>CSS Events</h1>
+                       <p>When slide 3 is reached - play CSS animation!</p>
+                   </div>
+               </div>
+           </li>
+           <li>
+               <div id="bg2" class="bg">
+                   <div>
+                       <h1>CSS Events</h1>
+                       <p>When slide 3 is reached - play CSS animation!</p>
+                   </div>
+               </div>
+           </li>
+           <li>
+               <div id="bg3" class="bg">
+                   <div>
+                       <h1>CSS Events</h1>
+                       <p>When slide 3 is reached - play CSS animation!</p>
+                   </div>
+               </div>
+           </li>
+           <li>
+              <div id="bg4" class="bg">
+                   <div>
+                       <h1>CSS Events</h1>
+                       <p>When slide 3 is reached - play CSS animation!</p>
+                   </div>
+               </div>
+           </li>
+       </ul>
+       <div class="navigation">
+           <div>
+               <label for="slides_1"></label>
+               <label for="slides_2"></label>
+               <label for="slides_3"></label>
+               <label for="slides_4"></label>
+           </div>
+       </div>
+   </div>
 </div>
 
+<!-- Slide 3 over -->
 <!-- Slide 4 -->
 <div class="slide4">
 	<!-- header -->
