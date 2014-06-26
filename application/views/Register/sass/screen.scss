@@ -81,7 +81,7 @@ $white:#fafafa;
 }
 
 .container {
-    background-color:$lessgrey;
+    background: url("tasveer/background.png");
     height: 100%;
     @include breakpoint(small) {min-height:400px;}
 }

@@ -21,7 +21,7 @@
 				<div class="area">
 					<input type="password" name="password" id="password" placeholder="Password" title="Password" required>
 				</div>
-				<input type="submit" value="Sign In"><br>
+				<input type="submit" value="Login"><br>
 			</form>
 			<div class="footer">
 				<p class="p1">New Here?&nbsp;<a href="<?php echo base_url();?>index.php/registration">Sign Up</a></p>
