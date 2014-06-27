@@ -14,7 +14,8 @@
 	<div class="container">
 		<div class="signin">		
 			<h1 class="heading1">Sign In</h1>
-			<form class="form" action="post">
+			 <?php echo validation_errors(); ?> 
+			<form class="form" method="post" action="<?php echo base_url();?>index.php/signIn/verify">
 				<div class="area">
 					<input type="email" name="email" id ="email" placeholder="E-mail" title="Email Address" required />
 				</div>

@@ -28,6 +28,7 @@ class Registration extends CI_Controller {
 	}
 
 	public function verifyEmailAddress($verificationText) {
+		redirect('signIn', 'refresh');
 		$sql = "update register set active_status='Y' WHERE email_verification_code=?";
 		$this->db->query($sql, array($verificationText));
 		return $this->db->affected_rows();
