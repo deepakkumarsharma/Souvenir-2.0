@@ -8,6 +8,9 @@
 @import "compass/css3/transition";
 @import "compass/css3/transform";
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/***** Mixins ******/
+
 @mixin breakpoint($point) {
     @if $point == small {
         @media  only screen
@@ -25,7 +28,6 @@
 
 body {
     background:url("skulls.png");
-    font-family: Orphan, Futura Light, Futura, sans-serif;
     font-size: 4.8vw;
 
 }
@@ -57,13 +59,17 @@ body {
     border-radius:5%;
     bottom:10px;
     @include breakpoint(small){display:none;}
-    @include breakpoint(medium){display:none;}
+    @include breakpoint(medium){width:6.5%; height:10%;}
    h1 {
+    height: auto;
+    width: auto;
     text-align:center;
-    padding-top:3%;
+    padding-top:5%;
     padding-left:3%;
-    font-size:50px;
+    font-size:77px;
     color:#222222;
+    @include breakpoint(medium){font-size:45px;}
+
     }
 }
 #t0 {
@@ -132,7 +138,6 @@ body {
     display: none;
     font-size: 10px;
     @include breakpoint(small){opacity:0;}
-    @include breakpoint(medium){display:inline;}
     h1 {
         text-align:center;
         padding-top:0px;
@@ -188,16 +193,18 @@ body {
     top:20%;
     color:ffffff;
     text-align:center;
-    .lineheading {
+    .heading1 {
         font-size:50px;
-        padding-top:7px;
+        padding-top:42px;
         text-transform: uppercase;
-        font-weight: normal;
+        font-weight: 500;
+        text-align: center;
         text-shadow: 0 5 2px rgba(0,0,8,1);
+        @include breakpoint(small) {display:none;}
+        @include breakpoint(medium) {font-size:42px; padding-top:94px; font-weight:100; text-align: center; margin-left: -12rem;}
     }
-    @include breakpoint(small) {visibility:hidden;}
-    @include breakpoint(medium) {width:200px; height:100px;left:20%;}
 }
+
 .success {
     @extend .line;
     left:15%;
@@ -206,90 +213,88 @@ body {
     @include breakpoint(medium) {width:400px; height:150px;left:20%;}
     @include breakpoint(small) {visibility:visible;}
 }
+
 #form-div {
-	background-color:rgba(72,72,72,0.4);
-	padding-left:5%;
-	padding-right:5%;
-	padding-top:5%;
-        padding-bottom:5%;
-	width: 30%;
-        height:70%;
-	float: left;
-        right:20px;
-	position: absolute;
-        margin-top:30px;
-	margin-left: 100px;
-       -moz-border-radius: 7px;
-       -webkit-border-radius: 7px;
+background-color: rgba(255, 255, 255, 0.4);
+width: 40%;
+  height: auto;
+  right: 5px;
+  position: absolute;
+  margin-top: 35px;
+  margin-left: 4px;
+  padding-top: 14rem;
+  @include breakpoint(small){width:98%; height:auto;}
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
 }
 
 .feedback-input {
-	color:#3c3c3c;
-	font-family: Helvetica, Arial, sans-serif;
-        font-weight:500;
-	font-size: 18px;
-	border-radius: 0;
-	line-height: 22px;
-	background-color: #fbfbfb;
-	padding: 13px 13px 13px 54px;
-	margin-bottom: 10px;
-	width:100%;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-        border: 3px solid rgba(0,0,0,0);
+  	color:#3c3c3c;
+  	font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+  	font-size: 18px;
+  	border-radius: 0;
+  	line-height: 22px;
+  	background-color: #fbfbfb;
+  	padding: 13px 13px 13px 54px;
+  	margin-bottom: 10px;
+  	width:100%;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-ms-box-sizing: border-box;
+  	box-sizing: border-box;
+    border: 3px solid rgba(0,0,0,0);
 }
 
 .feedback-input:focus{
-	background: #fff;
-	box-shadow: 0;
-	border: 3px solid #3498db;
-	color: #3498db;
-	outline: none;
-  padding: 13px 13px 13px 54px;
+  	background: #fff;
+  	box-shadow: 0;
+  	border: 3px solid #3498db;
+  	color: #3498db;
+  	outline: none;
+    padding: 13px 13px 13px 54px;
 }
 
 .focused{
-	color:#30aed6;
-	border:#30aed6 solid 3px;
+  	color:#30aed6;
+  	border:#30aed6 solid 3px;
 }
 
 /* Icons ---------------------------------- */
 #name{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+  	background-image: url("tasveer/name.svg");
+  	background-size: 30px 30px;
+  	background-position: 11px 8px;
+  	background-repeat: no-repeat;
 }
 
 #name:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/name.svg);
-	background-size: 30px 30px;
-	background-position: 8px 5px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
+  	background-image: url("tasveer/name.svg");
+  	background-size: 30px 30px;
+  	background-position: 8px 5px;
+    background-position: 11px 8px;
+  	background-repeat: no-repeat;
 }
 
 #email{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+  	background-image: url("tasveer/email.svg");
+  	background-size: 30px 30px;
+  	background-position: 11px 8px;
+  	background-repeat: no-repeat;
 }
 
 #email:focus{
-	background-image: url(http://rexkirby.com/kirbyandson/images/email.svg);
-	background-size: 30px 30px;
-  background-position: 11px 8px;
-	background-repeat: no-repeat;
+  	background-image: url("tasveer/email.svg");
+  	background-size: 30px 30px;
+    background-position: 11px 8px;
+  	background-repeat: no-repeat;
 }
 
 #comment{
-	background-image: url(http://rexkirby.com/kirbyandson/images/comment.svg);
-	background-size: 30px 30px;
-	background-position: 11px 8px;
-	background-repeat: no-repeat;
+  	background-image: url("tasveer/comment.svg");
+  	background-size: 30px 30px;
+  	background-position: 11px 8px;
+  	background-repeat: no-repeat;
 }
 
 textarea {
@@ -299,72 +304,36 @@ textarea {
     resize:vertical;
 }
 
-input:hover, textarea:hover,
-input:focus, textarea:focus {
-	background-color:white;
+input:hover, textarea:hover, input:focus, textarea:focus {
+    background-color:white;
 }
 
 #button-blue{
-	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-	float:left;
-	width: 100%;
-	border: #fbfbfb solid 4px;
-	cursor:pointer;
-	background-color: #3498db;
-	color:white;
-	font-size:24px;
-	padding-top:22px;
-	padding-bottom:22px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+  	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  	float:left;
+  	width: 100%;
+  	border: #fbfbfb solid 4px;
+  	cursor:pointer;
+  	background-color: #3498db;
+  	color:white;
+  	font-size:24px;
+  	padding-top:22px;
+  	padding-bottom:22px;
+  	-webkit-transition: all 0.3s;
+  	-moz-transition: all 0.3s;
+  	transition: all 0.3s;
+    margin-top:-4px;
+    font-weight:700;
 }
 
 #button-blue:hover{
-	background-color: rgba(0,0,0,0);
-	color: #0493bd;
-}
-	
-.submit:hover {
-	color: #3498db;
-}
-	
-.ease {
-	width: 0px;
-	height: 74px;
-	background-color: #fbfbfb;
-	-webkit-transition: .3s ease;
-	-moz-transition: .3s ease;
-	-o-transition: .3s ease;
-	-ms-transition: .3s ease;
-	transition: .3s ease;
-}
-
-.submit:hover .ease{
-  width:100%;
-  background-color:white;
+  	background-color: rgba(0,0,0,0.5);
+  	color: #0493bd;
 }
 
 @media only screen and (max-width: 580px) {
 	#form-div{
-		left: 3%;
-		margin-right: 3%;
-		width: 88%;
+		width: 100%;
 		margin-left: 0;
-		padding-left: 3%;
-		padding-right: 3%;
 	}
 }
-@font-face {
-    font-family: Orphan;
-    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/orphan_2.woff') format('woff');
-    font-weight: normal;
-    font-weight: 100;
-    font-style: normal;
-}
-html {
-  font-family: Orphan, Futura Light, Futura, sans-serif;
-}
-

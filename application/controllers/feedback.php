@@ -12,7 +12,8 @@ class Feedback extends CI_Controller {
 
          if ($this->form_validation->run() == FALSE)
          {
-             $this->load->view('feedback/feedback.php');
+            $this->load->view('feedback/feedback.php');
+            $this->load->view('Home/header.php');         
          }
          else
          {
