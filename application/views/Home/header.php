@@ -22,7 +22,7 @@
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href>Form</a></li>
 			<li><a href="#">Gallery</a></li>
-			<li><a href>Feedback</a></li>
+			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
 		</ul>
 		<nav id="bt-menu" class="bt-menu">
 		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -32,7 +32,7 @@
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href>Form</a></li>
 			<li><a href="#">Gallery</a></li>
-			<li><a href>Feedback</a></li>
+			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
 		</ul>
 		</nav>
 		</nav>		
