@@ -9,6 +9,7 @@ class SignIn extends CI_Controller {
 
 	public function verify() {
 		$this->load->library('form_validation');
+		$this->form_validation->set_error_delimiters('<div class="error">', '</div>');
    		$this->form_validation->set_rules('email', 'email', 'required|callback_checkk');
    		$this->form_validation->set_rules('password', 'password', 'trim|required|xss_clean');
 

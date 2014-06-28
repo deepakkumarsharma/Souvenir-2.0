@@ -35,10 +35,6 @@ $white : #fff;
 
 /**** Sassy Begins *****/
 
-body {
-    width: 100%;
-    height:100%;
-}
 .canvas {
 	position : absolute;
   	z-index : -1000;
@@ -55,19 +51,21 @@ body {
 input {
     width: 100%;
     height: 56px;
-    background: rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.1);
     font-size: 2rem;
+    text-align: center;
     color: $white;
     border: none;
     padding: 16px 13px;
 }
 
 input[type=submit] {
-    width: 100%;
-    text-transform: uppercase;
+    margin-left: 7.5rem;
+    width: 70%;
     background: $pinkred;
     cursor: pointer;
     border-radius: 3px;
+    @include breakpoint(small){margin-left: 4.8rem;}
     @include transition(background 0.50s ease-in-out);
     &:hover {
         background: rgba(202, 52, 53, 0.9);
@@ -75,7 +73,7 @@ input[type=submit] {
 }
 
 .container {
-    padding-top : 4rem;
+    padding-top : 2rem;
     width:100%;
     height:100%;
 
@@ -84,15 +82,16 @@ input[type=submit] {
         height: 50%;
         margin: 10vh auto 0 auto;
         padding: 0 1.7rem;
+        @include breakpoint(small) {width:350px; height:40%;}
 
         .heading1 {
             color: $white;
             text-transform: uppercase;
             text-align: center;
-            font-size: 8.15rem;
+            font-size: 8rem;
             letter-spacing: 1.59rem;
             font-weight: 400;
-            padding: 35px 0;
+            padding: 33px 0;
             font-family: FontAwesome;
             @include breakpoint(medium){font-size: 7.15rem; letter-spacing: 1rem;}
             @include breakpoint(small){font-size: 4.15rem; letter-spacing: 1rem;}
@@ -101,9 +100,9 @@ input[type=submit] {
         .footer {
             width: 300px;
             margin: 0 auto;
-            padding: 25px 0;
-            background: rgba(17,17,17,0.80);
-            border-top: 15px solid black;
+            padding: 8px;
+            background: rgba(0,0,0,0.1);
+            border-top: 15px solid;
             text-align: center;
             .p1 {
                 color: #fff;
@@ -122,3 +121,14 @@ input[type=submit] {
     }
 }
 /***** Sassy Ends ******/
+
+
+/****** Validation error *****/
+
+.error {
+
+    color: $white;
+    padding: 1rem;
+}
+
+/****** Validation error Over *****/
