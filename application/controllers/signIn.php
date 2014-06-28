@@ -17,8 +17,8 @@ class SignIn extends CI_Controller {
 			$this->load->view('Home/header.php');				
    			return false;
    		} else {
-			$this->load->view('Sign-in/sign-in.php');
-			$this->load->view('Home/header.php');				
+			$this->load->view('Form/form.php');
+			$this->load->view('Form/header.php');				
 			return true;
    		}		
 	}

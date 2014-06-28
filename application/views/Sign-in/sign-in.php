@@ -5,12 +5,14 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="<?php echo base_url();?>application/views/Sign-in/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
-	<script src="<?php echo base_url();?>application/views/Sign-in/js/sign.js"></script></head>
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
 </head>
 <body>
-	<canvas id="canvas" class="canvas">
-	</canvas>
+	<!-- Animated video -->
+	<video class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
+		<source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
+		<source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
+	</video>
 	<div class="container">
 		<div class="signin">		
 			<h1 class="heading1">Sign In</h1>

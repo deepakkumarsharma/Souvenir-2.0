@@ -18,20 +18,20 @@
 		<nav class="navbar" id="main_nav">
 		<ul class="unlist" id="unoderedlist">
 			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
-			<li><a href>Gallery</a></li>
-			<li><a href>Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
+			<li><a href>Form</a></li>
+			<li><a href="#">Gallery</a></li>
 			<li><a href>Feedback</a></li>
 		</ul>
 		<nav id="bt-menu" class="bt-menu">
 		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 		<ul class="unlist1">
 			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
-			<li><a href="#">Gallery</a></li>
-			<li><a href=>Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
+			<li><a href>Form</a></li>
+			<li><a href="#">Gallery</a></li>
 			<li><a href>Feedback</a></li>
 		</ul>
 		</nav>
