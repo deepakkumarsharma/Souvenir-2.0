@@ -7,7 +7,7 @@ class Feedback extends CI_Controller {
          $this->load->library('form_validation');
          $this->form_validation->set_rules('Username','Username','required|alpha');
          $this->form_validation->set_rules('Email','Email','required|valid_email');
-         $this->form_validation->set_rules('Comment','Comment','required|min_length[1]|max_length[300]');
+         $this->form_validation->set_rules('Comment','Comment','required|min_length[1]|max_length[500]');
          $this->load->helper('url');
 
          if ($this->form_validation->run() == FALSE)
