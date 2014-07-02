@@ -1,0 +1,283 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/*****Mixins*****/
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media  only screen
+            and (max-width: 600px)  { @content; }
+}
+@else if $point == medium {
+    @media only screen
+        and (max-width: 920px) { @content; }
+}
+@else if $point == larger {
+    @media only screen
+        and (max-width: 1100px)  { @content; }
+  }
+}
+@mixin key($name,$from,$to) {
+    @keyframes $name {
+        0%   { transform: translateY($from); }
+        100% { transform: translateY($to); }
+    }
+    @-webkit-keyframes $name {
+        0%   { -webkit-transform: translateY($from); }
+        100% { -webkit-transform: translateY($to); }
+    }
+}
+@mixin animate($keyframe) {
+     animation: $keyframe 7s ease-in-out infinite alternate;
+    -webkit-animation: $keyframe 7s ease-in-out infinite alternate;
+}
+@mixin border($radius) {
+     border-radius:$radius;
+     -webkit-border-radius:$radius;
+}
+/*****Mixins end*****/
+/*****Color*****/
+$grad: linear-gradient( #ff6059,#f7467b);
+$offwhite:#fbfbfb;
+$lesswhite:#fff;
+$lightblue: #37b689;
+$white:#ffffff;
+/*****Color ends*****/
+body {
+    background:url(skulls.png);
+    font-family: Orphan, Futura Light, Futura, sans-serif;
+    font-size: 4.8vw;
+}
+/*****css for background video*****/
+.video-triangle {
+    z-index:-1000;
+    top: 0;
+    left: 0;
+    width:auto;
+    height:auto;
+    position: fixed;
+    @include breakpoint(small) {width: auto; height:auto;}
+    @include breakpoint(medium) {width: auto; height:auto;}
+    @include breakpoint(large) {width: auto; height:auto;}
+}
+/*****css for background video ends*****/
+/*****keyframes*****/
+@include key(bob,-50%,-220%);
+@include key(bob1,-100%,-180%);
+/*****keyframes end*****/
+/*****Parent class for all FEEDBACK squares*****/
+.feedback {
+    width: 6%;
+    height:15%;
+    float:left;
+    position:absolute;
+    border-radius:5%;
+    bottom:10px;
+    background: $grad;
+    @include breakpoint(small){display:none;}
+    h1 {
+        text-align:center;
+        padding-top:2rem;
+        font-size:6rem;
+        color:#111111;
+        @include breakpoint(medium){font-size:4rem;padding-top:1.5rem}
+    }
+}
+/*****Parent class for all FEEDBACK squares ends*****/
+/*****Individual classes for FEEDBACK squares*****/
+.fb1 {
+    @extend .feedback;
+    left:1%;
+    @include animate(bob1);
+}
+.fb2 {
+    @extend .feedback;
+    left:8%;
+    @include animate(bob);
+}
+.fb3 {
+    @extend .feedback;
+    left:15%;
+    @include animate(bob1);
+}
+.fb4 {
+    @extend .feedback;
+    left:22%;
+    @include animate(bob);
+}
+.fb5 {
+    @extend .feedback;
+    left:29%;
+    @include animate(bob1);
+}
+.fb6 {
+    @extend .feedback;
+    left:36%;
+    @include animate(bob);
+}
+.fb7 {
+    @extend .feedback;
+    left:43%;
+    @include animate(bob1);
+}
+.fb8 {
+    @extend .feedback;
+    left:50%;
+    @include animate(bob);
+}
+/*****Individual classes for FEEDBACK squares ends*****/
+/*****Class for the text "Would like your"*****/
+.line {
+    width:40%;
+    height:auto;
+    position:absolute;
+    left:10%;
+    top:30%;
+    color:ffffff;
+    text-align:center;
+    .lineheading {
+        font-family: Orphan, Futura Light, Futura, sans-serif;
+        font-size:6rem;
+        padding-top:7px;
+        text-transform: uppercase;
+        font-weight: normal;
+        text-shadow: 0 5 2px rgba(0,0,8,1);
+        @include breakpoint(medium) {font-size:3rem;}
+    }
+    @include breakpoint(small) {visibility:hidden;}
+    @include breakpoint(medium) {width:200px; height:100px;left:20%;}
+}
+/*****CLass for text "Would like your ends*****/
+/*****Classes for feedback success page*****/
+.success {
+    @extend .line;
+    left:15%;
+    width:70%;
+    height:40%;
+    @include breakpoint(medium) {width:400px; height:150px;left:20%;}
+    @include breakpoint(small) {visibility:visible;}
+}
+/*****Classes for feedback success page ends*****/
+/*****CSS for Outer div of the form*****/
+.form-div {
+    background-color:rgba(200,200,200,0.4);
+    padding-left:3%;
+    padding-right:3%;
+    padding-top:5%;
+    padding-bottom:5%;
+    width: 32%;
+    height:550px;
+    right:20px;
+    position: absolute;
+    top:100px; 
+    margin-left: 100px;
+    @include border(10px);
+    @include breakpoint (small){ left: 8%;
+        margin-right: 6%;
+        width: 78%;
+        height:500x;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+}
+}
+/*****CSS for Outer div of the form ends*****/
+/*****Common class for all input fields*****/
+.feedback-input {
+    color:$lightblue;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight:500;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: $offwhite;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+.feedback-input:focus{
+    background: $lesswhite;
+    box-shadow: 0;
+    border: 3px solid $lightblue;
+    color: $lightblue;
+    outline: none;
+    padding: 13px 13px 13px 54px;
+}
+/*Common class for all input fields ends*****/
+/*****Individual classes for input fields*****/
+.icons {
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+    background-repeat: no-repeat;
+}
+.name, .name:focus {
+    @extend .feedback-input,.icons;
+    background-image: url(tasveer/name.svg);
+    height:13%;
+}
+
+.email, .email:focus {
+    @extend .feedback-input,.icons;
+    background-image: url(tasveer/email.svg);
+    height:13%;
+} 
+
+.comment, .comment:focus {
+    @extend .feedback-input,.icons;
+    background-image: url(tasveer/comment.svg);
+    height:45%;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+.button-blue{
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    float:left;
+    width: 100%;
+    border: $offwhite solid 4px;
+    cursor:pointer;
+    background-color: $lightblue;
+    color:$white;
+    font-size:24px;
+    padding-top:22px;
+    padding-bottom:22px;
+    margin-top:-4px;
+    font-weight:700;
+    @include transition(background 0.50s ease-in-out);
+        &:hover {
+            background: $white;
+            color: $lightblue;
+        }
+}
+.submit {
+   background:$white;
+}
+	
+.submit:hover {
+    color: $lightblue;
+}
+/*****Idividual classes for input fields ends*****/
+@font-face {
+    font-family: Orphan;
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/orphan_2.woff') format('woff');
+    font-weight: normal;
+    font-weight: 100;
+    font-style: normal;
+}

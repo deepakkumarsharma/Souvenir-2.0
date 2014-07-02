@@ -13,5 +13,16 @@ class sign_model extends CI_Model {
 			}
 		}
 	}
+
+	public function change_password($email, $password) {
+		$this->load->database();
+		$result=$this->db->query("select * from register where email='".$email."' AND pass='".$password."'");
+		if($result->num_rows()>0) {
+			$action=$this->db->query("update register set 'password'='".$this->input->post('newPassword')."' where email='".$email."'");
+			return true;
+		} else {
+			return false;
+		}
+	}
 }	
 ?>

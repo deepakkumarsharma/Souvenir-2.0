@@ -23,7 +23,8 @@ class SignIn extends CI_Controller {
 			return true;
    		}		
 	}
-
+// Callback function of email. Function - Verify(). This will check email and password, if any error it 
+// display message 
 	public function checkk() {
 		$this->load->model('sign_model');
 		$result=$this->sign_model->login($this->input->post('email'),sha1($this->input->post('password')));

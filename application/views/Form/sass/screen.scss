@@ -4,3 +4,197 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/css3";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,300);
+
+/***** Mixins ******/
+
+@mixin breakpoint($point) {
+    @if $point == small {
+        @media  only screen
+            and (max-width: 600px)  { @content; }
+}
+@else if $point == medium {
+    @media only screen
+        and (max-width: 820px) { @content; }
+}
+@else if $point == larger {
+    @media only screen
+        and (max-width: 1100px)  { @content; }
+  }
+}
+
+/***** Colors *******/
+
+$black:#222;
+$lessblack:#333;
+$lesserblack:#444;
+$blue:#52ADDA;
+$lessblue:#68B8DF;
+$darkblue: #0084cd;
+$grey:#C9C9C9;
+$lessgrey:#DBDBDB;
+$white:#fafafa;
+
+/***** Color-Ends *****/
+
+
+/***************** SASSY BEGINS ***************/
+
+/******* Header *********/
+
+.header {
+	height: 30%;
+	background: $blue;
+    @include breakpoint(medium){height: 32%;}
+    @include breakpoint(small){height: 23%;}
+    .heading1 {
+        padding-top: 6.5rem;
+        text-align: center;
+        font-size: 9rem;
+        font-weight: 23px;
+        font-family:Pacifico;
+        color: $lessblack;
+        @include breakpoint(medium){padding-top:11rem; font-size: 6rem;}
+        @include breakpoint(small){padding-top:6rem; font-size: 6rem; font-weight: 15px;}
+    } 
+}
+
+/******* Header Over *********/
+
+/***** Parent Code *********/
+
+.input {
+    background: transparent;
+    font-size: 2.1rem;
+    text-align: center;
+    line-height: 3;
+    border: 5px solid transparent;
+    width: 80%;
+    height: 12.3%;
+    font-weight: 300;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    @include breakpoint(medium){text-align: left; width: 85%;}  
+    @include breakpoint(small){text-align: left;}      
+}
+
+.container {
+    height: 100%;
+    @include breakpoint(small) {min-height:400px;}
+}
+
+.s_data {
+    padding-top:30px;
+}
+
+.shrink{
+    max-width:1200px;
+    margin:auto;
+}
+
+.content {
+    width:50%;
+    float:left;
+    margin-left:10px;
+    @include breakpoint(small){width:90%; clear:both;}
+}
+
+h2.name{
+	font-size: 18px;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: left;
+	color: $lessblack;
+	border-bottom: 1px solid $lessblack;
+	padding-bottom: 3px;
+	margin-bottom: 17px;
+}
+
+/******* Parent ends *******/
+
+.performa {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+ 
+    .firstname {
+        @extend .input;
+    }
+
+    .middlename {
+        @extend .input;
+    }
+
+    .lastname {
+        @extend .input;
+    }
+
+    .fathername {
+        @extend .input;
+    }
+
+    .mothername {
+        @extend .input;
+    }
+
+    .postalcode {
+    	@extend .input;
+    }
+
+    .address {
+    	@extend .input;
+    }    
+
+    .submit {
+        font-size: 2.1rem;
+        background: $blue;
+        border: 0;
+        width: 250px;
+        height: 60px;
+        border-radius: 3px;
+        color: white;
+        curson: pointer;
+        @include transition(background 0.50s ease-in-out);
+        &:hover {
+            background: $black;
+        }     
+   	}                
+}
+
+.verticalLine {
+    content: '';
+    height: 119%;
+    border: 1px solid black;
+    float: left;
+    margin-left: 12px;
+    @include breakpoint(small) {display:none;}
+}
+
+/**** Angular ****/
+
+.angular {
+    margin-left: 10px;
+    float: left;
+    height:100%;
+    width:43%;
+    @include breakpoint(small) {display: none;}
+    
+    .fname {
+        padding-top: 2rem;
+        text-align: left;
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+        padding-bottom: 2rem;
+    }
+
+    .mname {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }    
+}
+
+/**** Angular Over ****/
