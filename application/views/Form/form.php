@@ -12,8 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
 	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
-    <script src="<?php echo base_url();?>application/views/info/assets/js/jquery.js"></script>
-    <script src="<?php echo base_url();?>application/views/info/assets/js/bootstrap-datepicker.js"></script>	
 <body>
 	<div class="container performa">
 	<header class="header">
@@ -33,8 +31,8 @@
 					<input type="text" ng-model="mothername" class="mothername" name="Mothername"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Mother Name" required /><br><br>	
 					<!-- Personal Details -->
 					<h2 class="name">Personal Details</h2><br>
-					<input type="tel" ng-model="telephone" class="telephone" name="Telephone" pattern="[0-9]" title="Mobile Number" placeholder="Mobile Number" required /><br>	
-					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9]" title="Number Only." placeholder="Postal Code" required /><br>
+					<input type="tel" ng-model="telephone" class="telephone" name="Telephone" pattern="[0-9\s]+" title="Mobile Number" placeholder="Mobile Number" required /><br>	
+					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9\s]+" title="Number Only." placeholder="Postal Code" required /><br>
 					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Address" required /><br><br>
 					<!-- Image -->
 					<h2 class="name">Upload Photo</h2><br>
