@@ -1,6 +1,7 @@
 <?php
 
 class SignIn extends CI_Controller {
+	
 	public function index() {
 		$this->load->library('form_validation');
 		$this->load->view('Sign-in/sign-in.php');
@@ -18,8 +19,8 @@ class SignIn extends CI_Controller {
 			$this->load->view('Home/header.php');				
    			return false;
    		} else {
-			$this->load->view('Form/form.php');
-			$this->load->view('Form/header.php');				
+   			$this->session->set_userdata('username', array('id'=>$this->input->post('email')));
+			redirect('signIn/home','refresh');   			
 			return true;
    		}		
 	}
@@ -34,6 +35,19 @@ class SignIn extends CI_Controller {
 			$this->form_validation->set_message('checkk','Invalid username or password');
 			return false;
 		}
+	}
+
+	 public function home() {
+   		if($this->session->all_userdata()) 
+   		$email=$this->session->userdata('username');
+   		$data['name'] =$email['id'];
+		$this->load->view('Form/form.php',$data);
+		$this->load->view('Home/header.php');				
+	}
+	
+	public function logout() {
+		$this->session->sess_destroy();
+		redirect('signIn','refresh');
 	}
 }
 ?>

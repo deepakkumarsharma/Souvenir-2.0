@@ -21,8 +21,14 @@
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href="<?php echo base_url();?>index.php/form">Form</a></li>
-			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
+				<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
+			
+			<?php if(isset($name)) {?>
+			<li><a href="<?php echo base_url();?>index.php/signIn/logout">Logout</a></li>
+			<?php } else { 
+			?>
 			<li><a href="#">Gallery</a></li>
+			<?php }?>
 		</ul>
 		<nav id="bt-menu" class="bt-menu">
 		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
@@ -32,7 +38,13 @@
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			<li><a href="<?php echo base_url();?>index.php/form">Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
+			
+			<?php if(isset($name)) {?>
+			<li><a href="<?php echo base_url();?>index.php/signIn/logout">Logout</a></li>
+			<?php } else { 
+			?>
 			<li><a href="#">Gallery</a></li>
+			<?php }?>
 		</ul>
 		</nav>
 		</nav>		

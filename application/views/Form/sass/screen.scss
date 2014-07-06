@@ -104,12 +104,11 @@ $white:#fafafa;
 h2.name{
 	font-size: 18px;
 	text-transform: uppercase;
-	font-weight: 300;
+	font-weight: 400;
 	text-align: left;
-	color: $lessblack;
-	border-bottom: 1px solid $lessblack;
+	color: $black;
 	padding-bottom: 3px;
-	margin-bottom: 17px;
+	margin-bottom: 1px;
 }
 
 /******* Parent ends *******/
@@ -139,6 +138,10 @@ h2.name{
         @extend .input;
     }
 
+    .telephone {
+        @extend .input;
+    } 
+
     .postalcode {
     	@extend .input;
     }
@@ -163,15 +166,6 @@ h2.name{
    	}                
 }
 
-.verticalLine {
-    content: '';
-    height: 119%;
-    border: 1px solid black;
-    float: left;
-    margin-left: 12px;
-    @include breakpoint(small) {display:none;}
-}
-
 /**** Angular ****/
 
 .angular {
@@ -181,20 +175,57 @@ h2.name{
     width:43%;
     @include breakpoint(small) {display: none;}
     
-    .fname {
+    .first_name {
         padding-top: 2rem;
         text-align: left;
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }
+
+    .middle_name {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }
+
+    .last_name {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+        padding-bottom:2rem;
+    }
+
+    .father_name {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }    
+
+    .mother_name {
         text-align: left;
         font-size: 2.2rem;
         margin-left: 4rem;
         padding-bottom: 2rem;
     }
 
-    .mname {
+    .ph_no {
         text-align: left;
         font-size: 2.2rem;
         margin-left: 4rem;
     }    
+
+    .postal_code {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }
+
+    .add {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }
 }
 
 /**** Angular Over ****/
