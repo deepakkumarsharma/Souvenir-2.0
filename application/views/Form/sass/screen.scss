@@ -113,6 +113,17 @@ h2.name{
 
 /******* Parent ends *******/
 
+/*** Removal of this create red border on every field
+whosesoever contain "required" 
+****/
+
+[required] {
+    color:$black;
+    box-shadow: none;
+}
+
+/*** Performa ****/
+
 .performa {
     background: transparent;
     height: 100%;
@@ -135,6 +146,10 @@ h2.name{
     }
 
     .mothername {
+        @extend .input;
+    }
+
+    .dob {
         @extend .input;
     }
 
@@ -209,6 +224,12 @@ h2.name{
         padding-bottom: 2rem;
     }
 
+    .d_o_b {
+        text-align: left;
+        font-size: 2.2rem;
+        margin-left: 4rem;
+    }  
+
     .ph_no {
         text-align: left;
         font-size: 2.2rem;
@@ -229,3 +250,33 @@ h2.name{
 }
 
 /**** Angular Over ****/
+
+
+/******** Thank you *******/
+
+.container1 {
+    height: 100%;
+    @include breakpoint(small) {min-height:400px;}
+}
+
+.s_data1 {
+    padding-top:30px;
+}
+
+.shrink1 {
+    max-width:1200px;
+    margin:auto;
+}
+
+.textarea {
+    .heading2 {
+        font-family:Pacifico;
+        text-align: center;
+        font-size: 3.6rem;
+        font-weight: 350;
+        padding-top: 7.2rem;
+    }
+}
+
+/******** Thank you over *******/
+
