@@ -118,7 +118,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /******* Header Over *********/
 /***** Parent Code *********/
 /* line 69, ../sass/screen.scss */
-.input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address {
+.input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
   background: transparent;
   font-size: 2.1rem;
   text-align: center;
@@ -131,14 +131,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 @media only screen and (max-width: 820px) {
   /* line 69, ../sass/screen.scss */
-  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address {
+  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
     text-align: left;
     width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
   /* line 69, ../sass/screen.scss */
-  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address {
+  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
     text-align: left;
   }
 }
@@ -207,7 +207,13 @@ whosesoever contain "required"
   height: 100%;
   width: 100%;
 }
-/* line 168, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
+.performa .textarea {
+  resize: none;
+  height: 200px;
+  width: 480px;
+}
+/* line 191, ../sass/screen.scss */
 .performa .submit {
   font-size: 2.1rem;
   background: #52adda;
@@ -222,13 +228,22 @@ whosesoever contain "required"
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-/* line 178, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .performa .submit:hover {
   background: #222222;
 }
 
-/**** Angular ****/
-/* line 186, ../sass/screen.scss */
+/********** Angular **********/
+/****** Parent Class ***/
+/* line 211, ../sass/screen.scss */
+.angularparent, .angular .first_name, .angular .middle_name, .angular .last_name, .angular .father_name, .angular .mother_name, .angular .d_o_b, .angular .field, .angular .mailid, .angular .ph_no, .angular .postal_code, .angular .add, .angular .class, .angular .university, .angular .comment {
+  text-align: left;
+  font-size: 2.2rem;
+  margin-left: 4rem;
+}
+
+/*** Parent Class Over ***/
+/* line 219, ../sass/screen.scss */
 .angular {
   margin-left: 10px;
   float: left;
@@ -236,95 +251,54 @@ whosesoever contain "required"
   width: 43%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 186, ../sass/screen.scss */
+  /* line 219, ../sass/screen.scss */
   .angular {
     display: none;
   }
 }
-/* line 193, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .angular .first_name {
   padding-top: 2rem;
-  text-align: left;
-  text-align: left;
-  font-size: 2.2rem;
   margin-left: 4rem;
 }
-/* line 201, ../sass/screen.scss */
-.angular .middle_name {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
-}
-/* line 207, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .angular .last_name {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
   padding-bottom: 2rem;
-}
-/* line 214, ../sass/screen.scss */
-.angular .father_name {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
-}
-/* line 220, ../sass/screen.scss */
-.angular .mother_name {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
-  padding-bottom: 2rem;
-}
-/* line 227, ../sass/screen.scss */
-.angular .d_o_b {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
-}
-/* line 233, ../sass/screen.scss */
-.angular .ph_no {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
-}
-/* line 239, ../sass/screen.scss */
-.angular .postal_code {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
 }
 /* line 245, ../sass/screen.scss */
+.angular .mother_name {
+  padding-bottom: 2rem;
+}
+/* line 270, ../sass/screen.scss */
 .angular .add {
-  text-align: left;
-  font-size: 2.2rem;
-  margin-left: 4rem;
+  padding-bottom: 2rem;
 }
 
 /**** Angular Over ****/
 /******** Thank you *******/
-/* line 257, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .container1 {
   height: 100%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 257, ../sass/screen.scss */
+  /* line 293, ../sass/screen.scss */
   .container1 {
     min-height: 400px;
   }
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .s_data1 {
   padding-top: 30px;
 }
 
-/* line 266, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .shrink1 {
   max-width: 1200px;
   margin: auto;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .textarea .heading2 {
   font-family: Pacifico;
   text-align: center;

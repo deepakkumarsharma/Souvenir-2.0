@@ -163,7 +163,30 @@ whosesoever contain "required"
 
     .address {
     	@extend .input;
-    }    
+    } 
+
+    .branch {
+        @extend .input;
+    }
+
+    .eMail {
+        @extend .input;
+    }
+
+    .classronum {
+        @extend .input;
+    }        
+
+    .unironum {
+        @extend .input;
+    } 
+
+    .textarea {
+        @extend .input;
+        resize:none; 
+        height:200px; 
+        width:480px;
+    }
 
     .submit {
         font-size: 2.1rem;
@@ -181,7 +204,17 @@ whosesoever contain "required"
    	}                
 }
 
-/**** Angular ****/
+/********** Angular **********/
+
+/****** Parent Class ***/
+
+.angularparent {
+    text-align: left;
+    font-size: 2.2rem;
+    margin-left: 4rem;
+}
+
+/*** Parent Class Over ***/
 
 .angular {
     margin-left: 10px;
@@ -192,60 +225,63 @@ whosesoever contain "required"
     
     .first_name {
         padding-top: 2rem;
-        text-align: left;
-        text-align: left;
-        font-size: 2.2rem;
+        @extend .angularparent;
         margin-left: 4rem;
     }
 
     .middle_name {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
     }
 
     .last_name {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
         padding-bottom:2rem;
     }
 
     .father_name {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
-    }    
+        @extend .angularparent;
+   }    
 
     .mother_name {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
         padding-bottom: 2rem;
     }
 
     .d_o_b {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
-    }  
+        @extend .angularparent;
+    }
+
+    .field {
+        @extend .angularparent;
+    }      
+
+    .mailid {
+        @extend .angularparent;
+    }
 
     .ph_no {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
     }    
 
     .postal_code {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
     }
 
     .add {
-        text-align: left;
-        font-size: 2.2rem;
-        margin-left: 4rem;
+        @extend .angularparent;
+        padding-bottom: 2rem;
+    }
+
+    .class {
+        @extend .angularparent;
+    }
+
+    .university {
+        @extend .angularparent;
+    }
+
+    .comment {
+        @extend .angularparent;
     }
 }
 
