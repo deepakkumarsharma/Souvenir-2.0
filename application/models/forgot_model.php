@@ -17,8 +17,8 @@ class Forgot_model extends CI_Model {
              'protocol' => 'smtp',
              'smtp_host' => 'ssl://smtp.gmail.com.',
              'smtp_port' => 465,
-             'smtp_user' => 'deeky.sharma@gmail.com', // change it to yours
-             'smtp_pass' => '@@DEE123p@k', // change it to yours
+             'smtp_user' => '', // change it to yours
+             'smtp_pass' => '', // change it to yours
              'mailtype' => 'html',
              'charset' => 'iso-8859-1',
              'wordwrap' => TRUE
