@@ -104,13 +104,13 @@ body
 /**** Header End *****/
 
 .navbar {
-    width:90%;
+    width:100%;
     max-width:1100px;
     margin:auto;
     .unlist {
         li {
             float:left;
-            width:16%;
+            width:19.5%;
             text-align:center;
             line-height:50px;
             font-size:1.6rem;
@@ -121,7 +121,7 @@ body
             @include breakpoint(medium) {font-size:1.3rem; width:33%;}
             @include breakpoint(small) {display:none;}
         }
-        }
+    }
 }
 
 .bt-menu {
@@ -163,32 +163,36 @@ body
         overflow:hidden;
         opacity:0.88;
     }   
-$grad1:linear-gradient(#FF0040,#FF4000);
-$grad2:-o-linear-gradient(#FF0040,#FF4000);
-$grad3:-moz-linear-gradient(#FF0040,#FF4000);
-$grad4:-webkit-linear-gradient(#FF0040,#FF4000);
+    $grad1:linear-gradient(#FF0040,#FF4000);
+    $grad2:-o-linear-gradient(#FF0040,#FF4000);
+    $grad3:-moz-linear-gradient(#FF0040,#FF4000);
+    $grad4:-webkit-linear-gradient(#FF0040,#FF4000);
 
-.s1div:nth-child(odd) {
-    @include transform(rotate(25deg));
-    background: $grad4;
-    background: $grad2;
-    background: $grad3;
-    background: $grad1;
-    
-    height:195%;
-    width:58%;
-    float:left;
-    margin-top:-20%;
-    margin-left:-23%;
-    @include breakpoint(small) {@include transform(rotate(0deg)); margin-left:-10%;}
-    .img1 {
-    }    
-}   
-.s1div:nth-child(even) {
-    height:100%;
-    width:39%;
-    float:right;
-}
+    .s1div:nth-child(odd) {
+        @include transform(rotate(25deg));
+        background: $grad4;
+        background: $grad2;
+        background: $grad3;
+        background: $grad1;
+        
+        height:195%;
+        width:58%;
+        float:left;
+        margin-top:-20%;
+        margin-left:-23%;
+        @include breakpoint(small) {@include transform(rotate(0deg)); margin-left:-10%;}
+    }   
+    .s1div:nth-child(even) {
+        height:100%;
+        width:39%;
+        float:right;
+    }
+    .s1Heading{
+        padding-top:10rem;
+        color: $white;
+        text-align:center;
+        font-size:10rem;
+    }
 }
 /*************** SLIDE 1 OVER **************/
 

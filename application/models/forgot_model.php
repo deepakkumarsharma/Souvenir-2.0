@@ -17,8 +17,8 @@ class Forgot_model extends CI_Model {
              'protocol' => 'smtp',
              'smtp_host' => 'ssl://smtp.gmail.com.',
              'smtp_port' => 465,
-             'smtp_user' => '', // change it to yours
-             'smtp_pass' => '', // change it to yours
+             'smtp_user' => 'deeky.sharma@gmail.com', // change it to yours
+             'smtp_pass' => '@@DEE123p@k', // change it to yours
              'mailtype' => 'html',
              'charset' => 'iso-8859-1',
              'wordwrap' => TRUE
@@ -29,7 +29,7 @@ class Forgot_model extends CI_Model {
          $this->email->from('', "iH8sum3r");
          $this->email->to($email);
          $this->email->subject("Yaadein Forgot password Verification");
-         $this->email->message("<a href=".base_url()."/index.php/forgotPassword/passwordreset/".$code."\">Click here</a> to recover your password");
+         $this->email->message("<a href=\"".base_url()."index.php/forgotPassword/passwordreset/".$code."\">Click here</a> to recover your password");
          $this->email->send(); 
      }
      public function update($code,$pass) { 

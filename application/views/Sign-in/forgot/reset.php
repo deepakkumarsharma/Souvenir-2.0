@@ -20,7 +20,7 @@
 
 	<div class="container">
 		<div class="signin">		
-			<h1 class="heading">Reset Password</h1>
+			<h1 class="headingForgot">Reset Password</h1>
 			<form class="form" method="post" action="#">
                 <div class="area">
                 	<input type="password" name="Password" id ="password" placeholder="New Password" title="Minimum 8 letters or numbers"  onchange="form.Passconf.pattern = this.value;" pattern="[a-zA-Z0-9]{8,}" required />

@@ -17,6 +17,7 @@
 	<video class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
+			<source src="<?php echo base_url();?>application/views/Home/Animation/video.webm">
 	</video>
 
 <!-- SLIDES GOES FROM HERE -->
@@ -25,10 +26,10 @@
 <div class="slide1">
     <section class="s1sec">
         <div class="s1div">
-        	<img src="stylesheet/tasveer/logo.png" alt="logo" class="img1">
-        	<h1 class="s1Heading">Souvenir</h1>
-            <p class="s1tagline">Be like a photographer. Get your vision right, keep yourself focus, zoom in on your goals and your success will be a souvenir</p>
         </div>
+        	<!-- <img src="<?php echo base_url();?>application/views/Home/stylesheets/tasveer/Souvenir.png" alt="logo" class="img1"> -->
+        	<h1 class="s1Heading">Yaadein</h1>
+            <p class="s1tagline">Be like a photographer. Get your vision right, keep yourself focus, zoom in on your goals and your success will be a souvenir</p>        
     </section>
 </div>
 
