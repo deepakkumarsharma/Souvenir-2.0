@@ -17,16 +17,11 @@
 	<header class="head" id="header">
 		<nav class="navbar" id="main_nav">
 		<ul class="unlist" id="unoderedlist">
-			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
+			<li><a href="<?php echo base_url();?>index.php/home">Home</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
-
-			<?php if(isset($name)) {?>
-			<li><a href="<?php echo base_url();?>index.php/Form">Form</a></li>
-			<?php } else { 
-			?>
+			<li><a href="<?php echo base_url();?>index.php/form">Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
-			<?php }?>
 
 			<?php if(isset($name)) {?>
 			<li><a href="<?php echo base_url();?>index.php/signIn/logout">Logout</a></li>
@@ -40,16 +35,11 @@
 		<nav id="bt-menu" class="bt-menu">
 		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>
 		<ul class="unlist1">
-			<li><a href="<?php echo base_url();?>index.php/home">About</a></li>
+			<li><a href="<?php echo base_url();?>index.php/home">Home</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
-			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
-			
-			<?php if(isset($name)) {?>
-			<li><a href="<?php echo base_url();?>index.php/Form">Form</a></li>
-			<?php } else { 
-			?>
+			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>	
+			<li><a href="<?php echo base_url();?>index.php/form">Form</a></li>
 			<li><a href="<?php echo base_url();?>index.php/feedback">Feedback</a></li>
-			<?php }?>
 
 			<?php if(isset($name)) {?>
 			<li><a href="<?php echo base_url();?>index.php/signIn/logout">Logout</a></li>

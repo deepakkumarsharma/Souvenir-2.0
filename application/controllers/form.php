@@ -48,12 +48,12 @@ class Form extends CI_Controller {
 		}
 		else
 		{
-			
+		
 			$data = $this->upload->data();
 			$this->load->model('form_model');
-			$this->form_model->form_fill($data['file_name']);
 			$this->load->view('Form/success', $data);
-			$this->load->view('Home/header.php');
+			$this->load->view('Home/header.php');	
+			$this->form_model->form_fill($data['file_name']);
 		}
 	}	
 }

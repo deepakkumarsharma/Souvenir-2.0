@@ -13,11 +13,11 @@
 </head>
 <body>
 <div class="container" id="main_container">	
-	<!-- Animated video -->
+	<!-- Background animated video -->
 	<video class="video-triangle" autoplay="true" loop width="100%" video="100%" style="width:100%, height:100%">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.ogv">
 		<source src="<?php echo base_url();?>application/views/Home/Animation/video.mp4">
-			<source src="<?php echo base_url();?>application/views/Home/Animation/video.webm">
+		<source src="<?php echo base_url();?>application/views/Home/Animation/video.webm">
 	</video>
 
 <!-- SLIDES GOES FROM HERE -->

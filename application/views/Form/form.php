@@ -11,13 +11,9 @@
 	<link href="<?php echo base_url();?>application/views/Form/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>application/views/Home/stylesheets/mobileView.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
-	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script></head>
-<!-- 	<!-- DOB Script and Css -->
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
-	<script src="http://code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-
- <body>
+	<script src="<?php echo base_url();?>application/views/Home/js/modernizr.custom.js"></script>
+</head>
+<body>
 	<div class="container performa">
 	<header class="header">
 		<h1 class="heading1">Fill Form</h1>
@@ -29,8 +25,8 @@
 					
 					<!-- Student Data -->
 					<h2 class="name">Name</h2><br>
-					<input type="text" ng-model="firstname" class="firstname" name="Firstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="First Name"  required  /><br>
-					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name"  required /><br>
+					<input type="text" ng-model="firstname" class="firstname" name="Firstname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="First Name" required /><br>
+					<input type="text" ng-model="middlename" class="middlename" name="Middlename"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Middle Name" /><br>
 					<input type="text" ng-model="lastname" class="lastname" name="Lastname"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Last Name" required /><br><br>
 					
 					<!-- Family -->
@@ -43,12 +39,12 @@
 					<!-- Date Of Birth -->
 					<input type="text" ng-model="dob" class="dob" name="DOB" title="D.O.B : date/month_name/year" pattern="[0-3]{1}[0-9]{1}[/]{1}(January|Ferburary|March|April|May|June|July|August|September|October|November|December|)[/]{1}[0-9]{4}" placeholder="D.O.B Eg: 29/June/2000" title="DOB"  required />
 					<input type="number" ng-model="telephone" class="telephone" name="Mobile" title="Mobile Number" placeholder="Mobile Number"  required  /><br>	
-					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9\s]+" title="Number Only." placeholder="Postal Code"  required  /><br>
-					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Address"  required  /><br><br>
+					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9\s]+" title="Number Only." placeholder="Postal Code" required /><br>
+					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Address" required /><br><br>
 
 					<!-- Image -->
 					<h2 class="name">Upload Photo</h2><br>	
-					<input id="uploadImage" class="uploadImage" ng-model="image" type="file" name="userfile" onchange="PreviewImage();" size="20"  required /><br><br>
+					<input id="uploadImage" class="uploadImage" ng-model="image" type="file" name="userfile" onchange="PreviewImage();" size="20"   /><br><br>
 					
 					<!-- Class Details -->
 					<h2 class="name">Class Details</h2><br>
@@ -61,10 +57,10 @@
                 		<option value="Electrical">Electrical</option>
                 		<option value="Electronics and Communication">Electronics and Communication</option>
         			</select>
-					<input type="email" ng-model="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address"   /><br>
-					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Numebr"    /><br>
-					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Numebr"    /><br>
-					<textarea class="textarea" ng-model="textarea" name="Comment" placeholder="Enter your comment"   /></textarea><br><br>
+					<input type="email" ng-model="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address"  required /><br>
+					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Numebr"  required /><br>
+					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Numebr" required /><br>
+					<textarea class="textarea" ng-model="textarea" name="Comment" placeholder="Enter your comment" required /></textarea><br><br>
 					<p style="text-align: center;"><input type='submit' class="submit" value='Upload'/></p>
 				<?php echo form_close();?>
 				</form>	
