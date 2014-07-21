@@ -10,6 +10,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="<?php echo base_url();?>application/views/Home/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>application/views/Home/js/turn.min.js"></script>
 </head>
 <body>
 <div class="container" id="main_container">	
@@ -27,8 +29,8 @@
     <section class="s1sec">
         <div class="s1div">
         </div>
-        	<!-- <img src="<?php echo base_url();?>application/views/Home/stylesheets/tasveer/Souvenir.png" alt="logo" class="img1"> -->
-        	<h1 class="s1Heading">Yaadein</h1>
+        	<img src="<?php echo base_url();?>application/views/Home/stylesheets/tasveer/Yaadein.png" alt="logo" class="img1">
+        	<!-- <h1 class="s1Heading">Yaadein</h1> -->
             <p class="s1tagline">Be like a photographer. Get your vision right, keep yourself focus, zoom in on your goals and your success will be a souvenir</p>        
     </section>
 </div>
@@ -36,126 +38,108 @@
 <!-- Slide 1 Over -->
 
 <!-- Slide 2 -->
-<div class="slide2">
+<div class="slide2 wrap">
+	<div class="text2">
+		<p class="slide2-description">No matter how far you are,<br><br>Yaadein brings you closer</p>
+	</div>
 </div>
 <!-- Slide 2 over -->
 
 <!-- Slide 3 -->
-<div class="slide3" >
-   <div id="slider1" class="csslider">
-       <input type="radio" name="slides" id="slides_1" checked/>
-       <input type="radio" name="slides" id="slides_2"  />
-       <input type="radio" name="slides" id="slides_3" />
-       <input type="radio" name="slides" id="slides_4" />
-       <ul>
-           <li>
-               <div id="bg1" class="bg">
-                   <div>
-                       <h1>CSS Events</h1>
-                       <p>When slide 3 is reached - play CSS animation!</p>
-                   </div>
-               </div>
-           </li>
-           <li>
-               <div id="bg2" class="bg">
-                   <div>
-                       <h1>CSS Events</h1>
-                       <p>When slide 3 is reached - play CSS animation!</p>
-                   </div>
-               </div>
-           </li>
-           <li>
-               <div id="bg3" class="bg">
-                   <div>
-                       <h1>CSS Events</h1>
-                       <p>When slide 3 is reached - play CSS animation!</p>
-                   </div>
-               </div>
-           </li>
-           <li>
-              <div id="bg4" class="bg">
-                   <div>
-                       <h1>CSS Events</h1>
-                       <p>When slide 3 is reached - play CSS animation!</p>
-                   </div>
-               </div>
-           </li>
-       </ul>
-       <div class="navigation">
-           <div>
-               <label for="slides_1"></label>
-               <label for="slides_2"></label>
-               <label for="slides_3"></label>
-               <label for="slides_4"></label>
-           </div>
-       </div>
-   </div>
+<div class="slide3">
+    <div class="s_data shrink">
+    	<h1 class="slide3heading">Turn Out The Pages Of Life</h1>
+        <div class="content">
+        </div>
+		<div id="magazine" class="magazine">
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/front.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+		</div>
+
+		<script type="text/javascript">
+			$(window).ready(function() {
+				$('#magazine').turn ({
+					display: 'double',
+					acceleration: true,
+					gradients: !$.isTouch,
+					elevation:50,
+					when: {
+						turned: function(e, page) {
+						}
+					}
+				});
+			});
+			
+			$(window).bind('keydown', function(e){
+				if (e.keyCode==37)
+					$('#magazine').turn('previous');
+				else if (e.keyCode==39)
+					$('#magazine').turn('next');	
+			});
+		</script>
+       	<div style="clear:both;">
+        </div>
+    </div>
 </div>
 
 <!-- Slide 3 over -->
+
 <!-- Slide 4 -->
 <div class="slide4">
-	<!-- header -->
-	<header class="aboutHeader">
-		<h1 class="slide4Heading">Nerds Behind This</h1>
-	</header>
-	<!-- header over -->
+    <div class="s_data shrink">
 
-	<section class="sectionContainer">
-		<!-- Part 1 -->
-		<div class="section1 bg1-section">
-			<article class="triangle1">
-			</article>
-		</div>
-		<div class="section2 sectionPink">
-			<article class="">
-			</article>
-		</div>
-
-		<!-- Part 2 -->
-		<div class="section2 sectionPink">
-			<article class="">
-			</article>
-		</div>
-		<div class="section1 bg2-section">
-			<article class="triangle2">
-			</article>
-		</div>
-
-		<!-- Part 3  -->
-		<div class="section1 bg3-section">
-			<article class="triangle3">
-			</article>
-		</div>
-		<div class="section2 sectionPink">
-			<article class="">
-			</article>
-		</div>
-
-		<!-- Part 4 -->
-		<div class="section2 sectionPink">
-			<article class="">
-			</article>
-		</div>
-		<div class="section1 bg4-section">
-			<article class="triangle4">
-			</article>
-		</div>
-	</section>
-
-	<!---------- Picture -------------->
-	<div class="picture">
-       	<div class="picture-text">
-		    <div style="clear:both;">
-		    </div>
+   		<h1 class="teamHeading">The Team</h1><br>
+		<p class="teamline">Dreamers, developers, designers,<br>we’re a talented bunch. </p>		
+	
+        <div class="content">
+			<div class="slide3text">
+			</div>
         </div>
-    </div>    
-	<!------- Picture ends here ------->	
-	<!-- Footer Starts here -->
-		<footer>
-		    <p class="wrapped footer-text"></p>
-		</footer>
-	<!-- Footer Ends -->		
+		<ul class="team">
+		<li>
+			<div class="teams image1">
+				<div class="description">
+					<h3>Senior Mentor</h3>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="teams image2">
+				<div class="description">
+					<h3>Deepak</h3>
+					<p>Team Leader<br>&<br>UI & Core Developer</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="teams image3">
+				<div class="description">
+					<h3>Satwantjit Kaur</h3>
+					<p>Core Developer<br>&<br>LaTeX Guru</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="teams image4">
+				<div class="description">
+					<h3>Ravina Singla</h3>
+					<p>LaTeX Guru</p>
+				</div>
+			</div>
+		</li>					
+		</ul>
+       	<div style="clear:both;">
+        </div>
+    </div>
+</div>
+
+<!-- Slide 4 over -->
+
 </div>
 </body>
 </html>

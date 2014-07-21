@@ -3,9 +3,12 @@
 class SignIn extends CI_Controller {
 	
 	public function index() {
+		if($this->session->all_userdata()) 
+   		$email=$this->session->userdata('username');
+   		$data['name'] =$email['id'];	
 		$this->load->library('form_validation');
 		$this->load->view('Sign-in/sign-in.php');
-		$this->load->view('Home/header.php');				
+		$this->load->view('Home/header.php', $data);					
 	}
 
 	public function verify() {
@@ -16,11 +19,11 @@ class SignIn extends CI_Controller {
 
    		if($this->form_validation->run() == FALSE) {
 			$this->load->view('Sign-in/sign-in.php');
-			$this->load->view('Home/header.php');				
+			$this->load->view('Home/header.php', $data);				
    			return false;
    		} else {
    			$this->session->set_userdata('username', array('id'=>$this->input->post('email')));
-			redirect('signIn/home','refresh');   			
+			redirect('form/','refresh');   			
 			return true;
    		}		
 	}
@@ -40,6 +43,7 @@ class SignIn extends CI_Controller {
 	 public function home() {
    		if($this->session->all_userdata()) 
    		$email=$this->session->userdata('username');
+
    		$data['name'] =$email['id'];
 		$this->load->view('Form/form.php',$data);
 		$this->load->view('Home/header.php');				

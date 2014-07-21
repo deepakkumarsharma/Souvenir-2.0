@@ -3,6 +3,10 @@
 class Registration extends CI_Controller {
 
 	public function index() {
+
+					if($this->session->all_userdata()) 
+   		$email=$this->session->userdata('username');
+   			$data['name'] =$email['id'];
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 		$this->load->helper('string');
@@ -15,10 +19,10 @@ class Registration extends CI_Controller {
 		
 		if ($this->form_validation->run() == FALSE) {
 			$this->load->view('Register/registration.php');
-			$this->load->view('Home/header.php');
+			$this->load->view('Home/header.php',$data);
 		} else {
 			$this->load->view('Register/success.php');
-			$this->load->view('Home/header.php');
+			$this->load->view('Home/header.php',  $data);
 			$this->load->model('register_model');
 			$this->register_model->register_user($string);
 
