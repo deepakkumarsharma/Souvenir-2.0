@@ -39,8 +39,10 @@
 
 <!-- Slide 2 -->
 <div class="slide2 wrap">
-	<div class="text2">
-		<p class="slide2-description">No matter how far you are,<br><br>Yaadein brings you closer</p>
+	<div class="transparent">	
+		<div class="text2">
+			<p class="slide2-description">No matter how far you are,<br><br>Yaadein brings you closer</p>
+		</div>		
 	</div>
 </div>
 <!-- Slide 2 over -->
@@ -53,12 +55,12 @@
         </div>
 		<div id="magazine" class="magazine">
 			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/front.png);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
-			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/slide2_2.jpg);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page1.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page2.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page3.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page1.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page1.png);"></div>
+			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/lastpage.png);"></div>
 		</div>
 
 		<script type="text/javascript">
@@ -94,7 +96,7 @@
     <div class="s_data shrink">
 
    		<h1 class="teamHeading">The Team</h1><br>
-		<p class="teamline">Dreamers, developers, designers,<br>we’re a talented bunch. </p>		
+		<p class="teamline">Dreamers, developers, designers,<br>we’re a talented bunch.</p>		
 	
         <div class="content">
 			<div class="slide3text">
@@ -104,7 +106,8 @@
 		<li>
 			<div class="teams image1">
 				<div class="description">
-					<h3>Senior Mentor</h3>
+					<h3>Dr. H.S.Rai</h3>
+					<p>Project Mentor</p>
 				</div>
 			</div>
 		</li>
@@ -136,9 +139,25 @@
        	<div style="clear:both;">
         </div>
     </div>
-</div>
 
-<!-- Slide 4 over -->
+<!-- Slide 5 -->
+<div class="slide5">
+	<!---------- Picture -------------->
+	<div class="picture">
+       	<div class="picture-text">
+		    <div style="clear:both;">
+		    </div>
+        </div>
+    </div>    
+	<!------- Picture ends here ------->	
+	<!-- Footer Starts here -->
+		<footer>
+		    <p class="wrapped footer-text"></p>
+		</footer>
+	<!-- Footer Ends -->    
+	</div>
+</div>
+<!-- Slide 5 over -->
 
 </div>
 </body>

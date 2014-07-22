@@ -216,29 +216,33 @@ body
 .slide2 {
     height:100%;
     border-bottom:1px dashed $black;
-
+    
     .text2 {
         width: 100%;
         height:100%;
-        opacity: 0.89;
+        opacity: 1;
         background: url(tasveer/slide2_2.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        z-index: -1000;
-        position: absolute; 
+        z-index: 2000;
+        position: absolute;            
+        
         .slide2-description {
-            z-index: 1000;
+            width: 100%;
+            height: 100%;            
             font-size: 70px;
             color: $darkblue;
             font-weight: 400;
             text-align: center;
-            font-family: 'Bookman', -sans-serif;
-            padding-top: 14.5rem;
+            font-style:condensed;
+            margin-top: 15rem;
+            padding-top: 2rem;
             @include breakpoint(medium){padding-top: 26rem; font-size: 42px;}
             @include breakpoint(small){padding-top: 9em; font-size: 30px;}            
         }
     }
 }
+
 
 /************** SLIDE 2 OVER ***************/
 
@@ -262,9 +266,7 @@ body
 
 .slide3 {
     height:auto;
-    border-bottom:1px dashed $white;
-    background: $lessblack;
-    opacity: 0.95;
+    border-bottom:1px dashed $black;
     font-weight: 400;
     @include breakpoint(medium){display: none;}
     @include breakpoint(small){display: none;}          
@@ -298,20 +300,21 @@ body
 
 .slide4 {
     height:auto;
-    border-bottom:1px dashed $white;
+    border-bottom:1px dashed $black;
     
     .teamHeading {
         color: $white;
         text-align: center;
-        font-size: 5.5rem;
+        font-size: 7rem;
         font-weight: 400;
     }
 
     .teamline{
         text-align: center;
         color: $white;
-        font-size: 4rem;
+        font-size: 5rem;
     }
+    
     .team {
         margin: 20px 0 0 0;
         padding: 50px;
@@ -380,8 +383,8 @@ body
 
     .description h3 {
         color: #fff;
-        text-transform: uppercase;
-        letter-spacing: 2px;
+        // text-transform: uppercase;
+        letter-spacing: 1px;
         font-size: 22px;
         margin: 10px 30px;
         padding: 45px 0 0 0;
@@ -421,6 +424,7 @@ body
     .teams:hover {
         @include box-shadow(inset 0 0 0 1px rgba(255,255,255,0.1), 0 1px 2px rgba(0,0,0,0.1));
     }
+    
     .teams:hover .description {
         @include transform(scale(1));
         opacity: 1;
@@ -431,3 +435,39 @@ body
     }        
 }
 /************** SLIDE 4 OVER ***********/
+
+/********* Slide 5 **********/
+
+.slide5 {
+    height:auto;
+    border-bottom:1px dashed $black;
+    
+    .picture {
+        height: 550px;
+        background-image:url(tasveer/gne1.jpg);
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+        background-size: 1382px 552px;
+        @include breakpoint(small) {display:none;};
+        .picture-text {
+            padding-top:90px;
+            width:100%;
+            height:auto;
+        }
+    }
+
+    footer {
+        padding-top: 60px;
+        min-height:100px;
+        background:$lessblack;
+    }
+
+    .footer-text{
+        padding:15px 15px;
+        color:$grey;
+        font-size:1.4rem;
+        line-height:2.1rem;
+    }
+}
+
+/********* Slide 5 over **********/

@@ -73,25 +73,23 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /***** Color-Ends *****/
 /**** Parent Code ****/
 /**** Parent Code Over ****/
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 .heading, .container .signin .heading1, .headingForgot {
   color: white;
-  text-transform: uppercase;
   text-align: center;
-  letter-spacing: 1.59rem;
+  letter-spacing: 0.50rem;
   font-weight: 400;
   padding: 33px 0;
-  font-family: FontAwesome;
 }
 @media only screen and (max-width: 820px) {
-  /* line 41, ../sass/screen.scss */
+  /* line 42, ../sass/screen.scss */
   .heading, .container .signin .heading1, .headingForgot {
     font-size: 7.15rem;
     letter-spacing: 1rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 41, ../sass/screen.scss */
+  /* line 42, ../sass/screen.scss */
   .heading, .container .signin .heading1, .headingForgot {
     font-size: 4.15rem;
     letter-spacing: 1rem;
@@ -99,7 +97,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /**** Sassy Begins *****/
-/* line 55, ../sass/screen.scss */
+/* line 56, ../sass/screen.scss */
 .canvas {
   position: absolute;
   z-index: -1000;
@@ -107,24 +105,24 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   height: 780px;
 }
 
-/* line 62, ../sass/screen.scss */
+/* line 63, ../sass/screen.scss */
 .area, .area1, .area2 {
   margin: 0 auto 20px auto;
   border-radius: 3px;
   box-shadow: inset 4px 6px 10px -4px rgba(0, 0, 0, 0.3), 0 1px 1px -1px rgba(255, 255, 255, 0.5);
 }
 
-/* line 67, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 .area1 {
   padding-top: 80px;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .area2 {
   padding-top: 50px;
 }
 
-/* line 75, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 input {
   width: 100%;
   height: 56px;
@@ -136,7 +134,7 @@ input {
   padding: 16px 13px;
 }
 
-/* line 86, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 input[type=submit] {
   margin-left: 7.5rem;
   width: 70%;
@@ -149,23 +147,23 @@ input[type=submit] {
   transition: background 0.5s ease-in-out;
 }
 @media only screen and (max-width: 600px) {
-  /* line 86, ../sass/screen.scss */
+  /* line 87, ../sass/screen.scss */
   input[type=submit] {
     margin-left: 4.8rem;
   }
 }
-/* line 94, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 input[type=submit]:hover {
   background: rgba(202, 52, 53, 0.9);
 }
 
-/* line 99, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .container {
   padding-top: 2rem;
   width: 100%;
   height: 100%;
 }
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 .container .signin {
   width: 500px;
   height: 50%;
@@ -173,17 +171,17 @@ input[type=submit]:hover {
   padding: 0 1.7rem;
 }
 @media only screen and (max-width: 600px) {
-  /* line 104, ../sass/screen.scss */
+  /* line 105, ../sass/screen.scss */
   .container .signin {
     width: 350px;
     height: 40%;
   }
 }
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .container .signin .heading1 {
-  font-size: 8rem;
+  font-size: 7.5rem;
 }
-/* line 116, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .container .signin .footer {
   width: 300px;
   margin: 0 auto;
@@ -192,13 +190,13 @@ input[type=submit]:hover {
   background: rgba(0, 0, 0, 0.1);
   text-align: center;
 }
-/* line 123, ../sass/screen.scss */
+/* line 124, ../sass/screen.scss */
 .container .signin .footer .p1 {
   color: #fff;
   font-size: 2.2rem;
   font-weight: 300;
 }
-/* line 130, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .container .signin .forget {
   font-size: 1.4em;
   font-weight: 300;
@@ -208,7 +206,7 @@ input[type=submit]:hover {
 
 /***** Sassy Ends ******/
 /****** Validation error *****/
-/* line 143, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .error {
   color: white;
   padding: 1rem;
@@ -216,7 +214,7 @@ input[type=submit]:hover {
 
 /****** Validation error Over *****/
 /****** Forgot Password *****/
-/* line 152, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 .headingForgot {
   font-size: 6rem;
 }

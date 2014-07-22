@@ -149,6 +149,10 @@ whosesoever contain "required"
         @extend .input;
     }
 
+    .sex {
+        @extend .input;
+    }
+
     .dob {
         @extend .input;
     }
@@ -240,11 +244,15 @@ whosesoever contain "required"
 
     .father_name {
         @extend .angularparent;
-   }    
+    }    
 
     .mother_name {
         @extend .angularparent;
         padding-bottom: 2rem;
+    }
+
+    .gender {
+        @extend .angularparent;
     }
 
     .d_o_b {

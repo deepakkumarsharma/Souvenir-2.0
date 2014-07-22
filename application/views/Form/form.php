@@ -37,6 +37,7 @@
 					<!-- Personal Details -->
 					<h2 class="name">Personal Details</h2><br>
 					<!-- Date Of Birth -->
+					<input type="text" ng-model="sex" class="sex" name="Gender"  pattern="[A-Z]{1}" title="Characters Only." placeholder="Gender : M/F"  required  /><br>
 					<input type="text" ng-model="dob" class="dob" name="DOB" title="D.O.B : date/month_name/year" pattern="[0-3]{1}[0-9]{1}[/]{1}(January|Ferburary|March|April|May|June|July|August|September|October|November|December|)[/]{1}[0-9]{4}" placeholder="D.O.B Eg: 29/June/2000" title="DOB"  required />
 					<input type="number" ng-model="telephone" class="telephone" name="Mobile" title="Mobile Number" placeholder="Mobile Number"  required  /><br>	
 					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9\s]+" title="Number Only." placeholder="Postal Code" required /><br>
@@ -58,8 +59,8 @@
                 		<option value="Electronics and Communication">Electronics and Communication</option>
         			</select>
 					<input type="email" ng-model="email" class="eMail" name="Email" placeholder="E-mail" title="Please Fill Valid Email Address"  required /><br>
-					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Numebr"  required /><br>
-					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Numebr" required /><br>
+					<input type="number" ng-model="classronum" class="classronum" name="Classronum"  pattern="[0-9\s]+" title="Number Only." placeholder="Class Roll Number"  required /><br>
+					<input type="number" ng-model="unironum" class="unironum" name="Unironum"  pattern="[0-9\s]+" title="Number Only." placeholder="University Roll Number" required /><br>
 					<textarea class="textarea" ng-model="textarea" name="Comment" placeholder="Enter your comment" required /></textarea><br><br>
 					<p style="text-align: center;"><input type='submit' class="submit" value='Upload'/></p>
 				<?php echo form_close();?>
@@ -89,6 +90,7 @@
             	<h1 class="last_name">Last Name : {{lastname}}</h1><br>
             	<h1 class="father_name">Father Name : {{fathername}}</h1>
             	<h1 class="mother_name">Mother Name : {{mothername}}</h1><br>
+            	<h1 class="gender">Gender : {{sex}}</h1>
             	<h1 class="d_o_b">D.O.B : {{dob}}</h1>
             	<h1 class="ph_no">Mobile Numeber : {{telephone}}</h1>
             	<h1 class="postal_code">Postal Code : {{postalcode}}</h1>

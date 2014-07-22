@@ -118,7 +118,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /******* Header Over *********/
 /***** Parent Code *********/
 /* line 69, ../sass/screen.scss */
-.input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
+.input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .sex, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
   background: transparent;
   font-size: 2.1rem;
   text-align: center;
@@ -131,14 +131,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 @media only screen and (max-width: 820px) {
   /* line 69, ../sass/screen.scss */
-  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
+  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .sex, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
     text-align: left;
     width: 85%;
   }
 }
 @media only screen and (max-width: 600px) {
   /* line 69, ../sass/screen.scss */
-  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
+  .input, .performa .firstname, .performa .middlename, .performa .lastname, .performa .fathername, .performa .mothername, .performa .sex, .performa .dob, .performa .telephone, .performa .postalcode, .performa .address, .performa .branch, .performa .eMail, .performa .classronum, .performa .unironum, .performa .textarea {
     text-align: left;
   }
 }
@@ -207,13 +207,13 @@ whosesoever contain "required"
   height: 100%;
   width: 100%;
 }
-/* line 184, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .performa .textarea {
   resize: none;
   height: 200px;
   width: 480px;
 }
-/* line 191, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 .performa .submit {
   font-size: 2.1rem;
   background: #52adda;
@@ -228,22 +228,22 @@ whosesoever contain "required"
   -o-transition: background 0.5s ease-in-out;
   transition: background 0.5s ease-in-out;
 }
-/* line 201, ../sass/screen.scss */
+/* line 205, ../sass/screen.scss */
 .performa .submit:hover {
   background: #222222;
 }
 
 /********** Angular **********/
 /****** Parent Class ***/
-/* line 211, ../sass/screen.scss */
-.angularparent, .angular .first_name, .angular .middle_name, .angular .last_name, .angular .father_name, .angular .mother_name, .angular .d_o_b, .angular .field, .angular .mailid, .angular .ph_no, .angular .postal_code, .angular .add, .angular .class, .angular .university, .angular .comment {
+/* line 215, ../sass/screen.scss */
+.angularparent, .angular .first_name, .angular .middle_name, .angular .last_name, .angular .father_name, .angular .mother_name, .angular .gender, .angular .d_o_b, .angular .field, .angular .mailid, .angular .ph_no, .angular .postal_code, .angular .add, .angular .class, .angular .university, .angular .comment {
   text-align: left;
   font-size: 2.2rem;
   margin-left: 4rem;
 }
 
 /*** Parent Class Over ***/
-/* line 219, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .angular {
   margin-left: 10px;
   float: left;
@@ -251,54 +251,54 @@ whosesoever contain "required"
   width: 43%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 219, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   .angular {
     display: none;
   }
 }
-/* line 226, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 .angular .first_name {
   padding-top: 2rem;
   margin-left: 4rem;
 }
-/* line 236, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .angular .last_name {
   padding-bottom: 2rem;
 }
-/* line 245, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .angular .mother_name {
   padding-bottom: 2rem;
 }
-/* line 270, ../sass/screen.scss */
+/* line 278, ../sass/screen.scss */
 .angular .add {
   padding-bottom: 2rem;
 }
 
 /**** Angular Over ****/
 /******** Thank you *******/
-/* line 293, ../sass/screen.scss */
+/* line 301, ../sass/screen.scss */
 .container1 {
   height: 100%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 293, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   .container1 {
     min-height: 400px;
   }
 }
 
-/* line 298, ../sass/screen.scss */
+/* line 306, ../sass/screen.scss */
 .s_data1 {
   padding-top: 30px;
 }
 
-/* line 302, ../sass/screen.scss */
+/* line 310, ../sass/screen.scss */
 .shrink1 {
   max-width: 1200px;
   margin: auto;
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 316, ../sass/screen.scss */
 .textarea .heading2 {
   font-family: Pacifico;
   text-align: center;

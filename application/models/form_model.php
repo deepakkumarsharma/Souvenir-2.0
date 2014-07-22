@@ -11,6 +11,7 @@ class Form_model extends CI_Model {
 		$lastname = $this->input->post('Lastname');
 		$fathername = $this->input->post('Fathername');
 		$mothername = $this->input->post('Mothername');
+		$gender = $this->input->post('Gender');
 		$dob = $this->input->post('DOB');
 		$mobile = $this->input->post('Mobile');
 		$postalcode = $this->input->post('Postalcode');
@@ -28,6 +29,7 @@ class Form_model extends CI_Model {
 			'lastname' => $this->input->post('Lastname'),
 			'fathername' => $this->input->post('Fathername'),
 			'mothername' => $this->input->post('Mothername'),
+			'gender' => $this->input->post('Gender'),
 			'dob' => $this->input->post('DOB'),
 			'mobile' => $this->input->post('Mobile'),
 			'postalcode' => $this->input->post('Postalcode'),

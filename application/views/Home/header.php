@@ -21,7 +21,6 @@
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>
 			<li><a href="<?php echo base_url();?>index.php/signIn">Sign-in</a></li>
 			
-			<?php echo $name; ?>
 			<?php if(isset($name)) {?>
 			<li><a href="<?php echo base_url();?>index.php/form">Form</a></li>
 			<?php } else { 

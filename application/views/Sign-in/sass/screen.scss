@@ -30,6 +30,7 @@
 
 $pinkred: #ca3435;
 $white : #fff;
+$lessblue:#68B8DF;
 
 /***** Color-Ends *****/
 
@@ -40,12 +41,12 @@ $white : #fff;
 
 .heading {
     color: $white;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     text-align: center;
-    letter-spacing: 1.59rem;
+    letter-spacing: 0.50rem;
     font-weight: 400;
     padding: 33px 0;
-    font-family: FontAwesome;
+    // font-family: FontAwesome;
     @include breakpoint(medium){font-size: 7.15rem; letter-spacing: 1rem;}
     @include breakpoint(small){font-size: 4.15rem; letter-spacing: 1rem;}
 }
@@ -110,7 +111,7 @@ input[type=submit] {
 
         .heading1 {
             @extend .heading;
-            font-size: 8rem;
+            font-size: 7.5rem;
         }
 
         .footer {

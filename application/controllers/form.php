@@ -11,9 +11,9 @@ class Form extends CI_Controller {
 	}
 
 	public function index() {
-			if($this->session->all_userdata()) 
+		if($this->session->all_userdata()) 
    		$email=$this->session->userdata('username');
-   			$data['name'] =$email['id'];
+   		$data['name'] =$email['id'];
 		$this->load->view('Form/form.php');
 		$this->load->view('Home/header.php',$data);
 	}
@@ -27,6 +27,7 @@ class Form extends CI_Controller {
 		$this->form_validation->set_rules('Lastname', 'Lastname', 'required');
 		$this->form_validation->set_rules('Fathername', 'Fathername', 'required');
 		$this->form_validation->set_rules('Mothername', 'Mothername', 'required');
+		$this->form_validation->set_rules('Gender', 'Gender', 'required');
 		$this->form_validation->set_rules('DOB', 'DOB', 'required');
 		$this->form_validation->set_rules('Mobile', 'Mobile', 'required');
 		$this->form_validation->set_rules('Postalcode', 'Postalcode', 'required');
@@ -55,7 +56,10 @@ class Form extends CI_Controller {
 			$data = $this->upload->data();
 			$this->load->model('form_model');
 			$this->load->view('Form/success', $data);
-			$this->load->view('Home/header.php');	
+			if($this->session->all_userdata()) 
+   			$email=$this->session->userdata('username');
+   			$data['name'] =$email['id'];			
+			$this->load->view('Home/header.php', $data);	
 			$this->form_model->form_fill($data['file_name']);
 		}
 	}	
