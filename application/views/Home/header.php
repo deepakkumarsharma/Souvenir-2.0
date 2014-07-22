@@ -38,6 +38,7 @@
 			
 		</ul>
 		<nav id="bt-menu" class="bt-menu">
+		<a href="#" class="bt-menu-trigger"><span>Menu</span></a>	
 		<ul class="unlist1">
 			<li><a href="<?php echo base_url();?>index.php/home">Home</a></li>
 			<li><a href="<?php echo base_url();?>index.php/registration">Register</a></li>

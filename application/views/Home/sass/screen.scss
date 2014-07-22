@@ -101,6 +101,7 @@ body
     position:absolute;
     box-shadow: 0px 2px 3px $lessblack;
     @include breakpoint(small) { position:absolute;}
+    @include single-box-shadow($lessblack,0px,2px,3px);
 }
 
 /**** Header End *****/
@@ -133,6 +134,9 @@ body
     @include breakpoint(small){display:block;}
 } 
 
+.icons {
+    width:16px;
+}
 
 .video-triangle {
     z-index:-1000;
@@ -141,7 +145,7 @@ body
     width:auto;
     height:auto;
     position: fixed;
-    @include breakpoint(small) {width: auto; height:auto;}
+    @include breakpoint(small) {background-image:url(tasveer/black.jpg);}
     @include breakpoint(medium) {width: auto; height:auto;}
     @include breakpoint(large) {width: auto; height:auto;}
 }

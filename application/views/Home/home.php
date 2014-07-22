@@ -115,7 +115,7 @@
 			<div class="teams image2">
 				<div class="description">
 					<h3>Deepak</h3>
-					<p>Team Leader</p>
+					<p>Team Leader<br>UI & Core Developer</p>
 				</div>
 			</div>
 		</li>
