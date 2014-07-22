@@ -31,7 +31,7 @@
     <div class="fb8"><h1>K</h1></div>
     <div class="form-div">
         <form   action="<?php echo base_url();?>index.php/feedback" method="post">
-            <input name="Username" type="text" placeholder="Name" pattern="[a-zA-Z]{5,}" title="3 or more Characters Only." class="name" required/>
+            <input name="Username" type="text" placeholder="Name" pattern="[a-zA-Z\s]+" title="Characters Only." class="name" required/>
             <input name="Email" type="email" class="email" placeholder="Email" title="Please Fill Valid Email Address" required/>
             <textarea name="Comment" type="text" class="comment" placeholder="Comment" title="Max 300words."required/></textarea>
             <div class="submit">

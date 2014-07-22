@@ -158,7 +158,8 @@ $white:#fafafa;
     transform-style: preserve-3d;
     backface-visibility: hidden;
     border-radius: 15px;
-    transform-origin: 50% -65px;
+    @include transform-origin(50%, -65px);
+    -webkit-animation: swing 1.5s infinite alternate ease-in-out;
     animation: swing 1.5s infinite alternate ease-in-out;
     @include breakpoint(medium){margin: 80px 4rem 0; }
     &:hover {
@@ -166,7 +167,7 @@ $white:#fafafa;
     }
 
     .p {
-        text-transform: uppercase;
+        // text-transform: uppercase;
         font-weight: bold;
         color: #fff;
         text-align: center;
@@ -198,7 +199,7 @@ $white:#fafafa;
     top: -55px;
     left: 50%;
     margin-left: -50px;
-    transform: rotate(-45deg);
+    @include transform(rotate(-45deg));
     border-radius: 0 5px 0 0;
 }
 
@@ -215,11 +216,15 @@ $white:#fafafa;
     background: linear-gradient(top, #4c4c4c 0%, #595959 12%, #666666 25%, #474747 39%, #2c2c2c 50%, #000000 51%, #111111 60%, #2b2b2b 76%, #1c1c1c 91%, #131313 100%);
 }
 
-@keyframes swing {
-    0% { transform: rotate(-3deg) }
-    100% { transform: rotate(3deg) }
+@-webkit-keyframes swing {
+    0% { @include transform(rotate(-3deg)) }
+    100% { @include transform(rotate(3deg)) }
 }
 
+@keyframes swing {
+    0% { @include transform(rotate(-3deg)) }
+    100% { @include transform(rotate(3deg)) }
+}
 
 /******** Registeration_done *******/
 

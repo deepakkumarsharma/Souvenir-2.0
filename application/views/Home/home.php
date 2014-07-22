@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="<?php echo base_url();?>application/views/Home/stylesheets/screen.css" media="screen,projection" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="<?php echo base_url();?>application/views/Home/js/turn.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>application/views/Home/js/turn.js"></script>
 </head>
 <body>
 <div class="container" id="main_container">	
@@ -30,8 +30,7 @@
         <div class="s1div">
         </div>
         	<img src="<?php echo base_url();?>application/views/Home/stylesheets/tasveer/Yaadein.png" alt="logo" class="img1">
-        	<!-- <h1 class="s1Heading">Yaadein</h1> -->
-            <p class="s1tagline">Be like a photographer. Get your vision right, keep yourself focus, zoom in on your goals and your success will be a souvenir</p>        
+        	<!-- <h1 class="s1Heading">Yaadein</h1> -->        
     </section>
 </div>
 
@@ -53,6 +52,7 @@
     	<h1 class="slide3heading">Turn Out The Pages Of Life</h1>
         <div class="content">
         </div>
+        
 		<div id="magazine" class="magazine">
 			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/front.png);"></div>
 			<div style="background-image:url(<?php echo base_url();?>application/views/Home/stylesheets/tasveer/page1.png);"></div>
@@ -115,7 +115,7 @@
 			<div class="teams image2">
 				<div class="description">
 					<h3>Deepak</h3>
-					<p>Team Leader<br>&<br>UI & Core Developer</p>
+					<p>Team Leader</p>
 				</div>
 			</div>
 		</li>
@@ -131,10 +131,18 @@
 			<div class="teams image4">
 				<div class="description">
 					<h3>Ravina Singla</h3>
+					<p>UI Developer<br>&<br>LaTeX Guru</p>
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="teams image5">
+				<div class="description">
+					<h3>Kaushalendra Dubey</h3>
 					<p>LaTeX Guru</p>
 				</div>
 			</div>
-		</li>					
+		</li>							
 		</ul>
        	<div style="clear:both;">
         </div>

@@ -98,7 +98,8 @@ body
     min-height:50px;
     top:0;
     z-index:1100;
-    position:fixed;
+    position:absolute;
+    box-shadow: 0px 2px 3px $lessblack;
     @include breakpoint(small) { position:absolute;}
 }
 
@@ -116,8 +117,7 @@ body
             line-height:50px;
             font-size:1.6rem;
             border-bottom:2px solid $black;
-            &:hover{border-bottom:2px solid $pink;
-            }
+            &:hover{border-bottom:2px solid $blue;}
             @include breakpoint(large) {font-size:1.4rem; float:right; width:136px;}
             @include breakpoint(medium) {font-size:1.3rem; width:33%;}
             @include breakpoint(small) {display:none;}
@@ -133,9 +133,6 @@ body
     @include breakpoint(small){display:block;}
 } 
 
-.icons {
-    width:16px;
-}
 
 .video-triangle {
     z-index:-1000;
@@ -176,7 +173,7 @@ body
         background: $grad3;
         background: $grad1;
         
-        height:195%;
+        height:182%;
         width:58%;
         float:left;
         margin-top:-20%;
@@ -224,7 +221,6 @@ body
         background: url(tasveer/slide2_2.jpg);
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        z-index: 2000;
         position: absolute;            
         
         .slide2-description {
@@ -237,8 +233,8 @@ body
             font-style:condensed;
             margin-top: 15rem;
             padding-top: 2rem;
-            @include breakpoint(medium){padding-top: 26rem; font-size: 42px;}
-            @include breakpoint(small){padding-top: 9em; font-size: 30px;}            
+            @include breakpoint(medium){padding-top: 9rem; font-size: 45px;}
+            @include breakpoint(small){padding-top: 2em; font-size: 34px;}            
         }
     }
 }
@@ -277,6 +273,15 @@ body
         font-weight: 400;
         color: $lessblue; 
     }
+    
+    .magzinetext {
+        text-align: left;
+        font-size: 4rem;
+        font-weight: 400;
+        margin: 0 auto;
+        color: $white;
+        z-index: 2000;
+    }
 
     .magazine {
         float:right;
@@ -307,12 +312,15 @@ body
         text-align: center;
         font-size: 7rem;
         font-weight: 400;
+        @include breakpoint(small){font-size: 5rem;}
     }
 
     .teamline{
         text-align: center;
         color: $white;
-        font-size: 5rem;
+        font-size: 3.5rem;
+        @include breakpoint(medium){font-size: 3rem; padding-top: 2rem;}
+        @include breakpoint(small){font-size: 2rem; padding-top: 0.7rem;}
     }
     
     .team {
@@ -334,10 +342,11 @@ body
     }
 
     .team li {
-        width: 220px;
+        width: 240px;
         height: 220px;
         display: inline-block;
         margin: 20px;
+        @include breakpoint(medium){width: 200px; height: 200px;}
     }
 
     .teams {
@@ -351,22 +360,32 @@ body
 
     .image1 { 
         background-image: url(tasveer/hsrai.jpg);
-        background-size: 230px 230px;
+        background-size: 253px 230px;
+        @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image2 { 
         background-image: url(tasveer/dk1.JPG);
-        background-size: 230px 230px;
+        background-size: 253px 230px;
+        @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image3 { 
         background-image: url(tasveer/satwant.JPG);
-        background-size: 230px 230px;
+        background-size: 253px 230px;
+        @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image4 { 
         background-image: url(tasveer/ravina.jpg);
-        background-size: 230px 230px;
+        background-size: 253px 230px;
+        @include breakpoint(medium){background-size: 217px 239px;}
+    }
+
+    .image5 { 
+        background-image: url(tasveer/dubey.jpg);
+        background-size: 240px 220px;
+        @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .description {
@@ -440,15 +459,14 @@ body
 
 .slide5 {
     height:auto;
-    border-bottom:1px dashed $black;
+    // border-bottom:1px dashed $black;
     
     .picture {
         height: 550px;
         background-image:url(tasveer/gne1.jpg);
         background-repeat:no-repeat;
         background-attachment:fixed;
-        background-size: 1382px 552px;
-        @include breakpoint(small) {display:none;};
+        @include background-size(100% 100%);
         .picture-text {
             padding-top:90px;
             width:100%;

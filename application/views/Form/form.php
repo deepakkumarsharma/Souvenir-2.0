@@ -41,7 +41,7 @@
 					<input type="text" ng-model="dob" class="dob" name="DOB" title="D.O.B : date/month_name/year" pattern="[0-3]{1}[0-9]{1}[/]{1}(January|Ferburary|March|April|May|June|July|August|September|October|November|December|)[/]{1}[0-9]{4}" placeholder="D.O.B Eg: 29/June/2000" title="DOB"  required />
 					<input type="number" ng-model="telephone" class="telephone" name="Mobile" title="Mobile Number" placeholder="Mobile Number"  required  /><br>	
 					<input type="number" ng-model="postalcode" class="postalcode" name="Postalcode"  pattern="[0-9\s]+" title="Number Only." placeholder="Postal Code" required /><br>
-					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z\s]+" title="Characters Only." placeholder="Address" required /><br><br>
+					<input type="textarea" ng-model="address" class="address" name="Address"  pattern="[a-zA-Z0-9\s]+" title="Characters Only." placeholder="Address" required /><br><br>
 
 					<!-- Image -->
 					<h2 class="name">Upload Photo</h2><br>	

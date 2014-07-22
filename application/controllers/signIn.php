@@ -18,6 +18,9 @@ class SignIn extends CI_Controller {
    		$this->form_validation->set_rules('password', 'password', 'trim|required|xss_clean');
 
    		if($this->form_validation->run() == FALSE) {
+   			if($this->session->all_userdata()) 
+   			$email=$this->session->userdata('username');
+   			$data['name'] =$email['id'];
 			$this->load->view('Sign-in/sign-in.php');
 			$this->load->view('Home/header.php', $data);				
    			return false;
