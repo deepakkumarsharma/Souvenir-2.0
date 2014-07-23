@@ -50,6 +50,7 @@
 <div class="slide3">
     <div class="s_data shrink">
     	<h1 class="slide3heading">Turn Out The Pages Of Life</h1>
+    	<h3 class="turnpages">Pull book corner</h3>
         <div class="content">
         </div>
         
@@ -123,7 +124,7 @@
 			<div class="teams image3">
 				<div class="description">
 					<h3>Satwantjit Kaur</h3>
-					<p>Core Developer<br>&<br>LaTeX Guru</p>
+					<p>Core Developer<br>&<br>LaTeX Developer</p>
 				</div>
 			</div>
 		</li>
@@ -131,7 +132,7 @@
 			<div class="teams image4">
 				<div class="description">
 					<h3>Ravina Singla</h3>
-					<p>UI Developer<br>&<br>LaTeX Guru</p>
+					<p>UI Developer<br>&<br>LaTeX Developer</p>
 				</div>
 			</div>
 		</li>
@@ -139,7 +140,7 @@
 			<div class="teams image5">
 				<div class="description">
 					<h3>Kaushalendra Dubey</h3>
-					<p>LaTeX Guru</p>
+					<p>LaTeX Developer</p>
 				</div>
 			</div>
 		</li>							
@@ -160,7 +161,7 @@
 	<!------- Picture ends here ------->	
 	<!-- Footer Starts here -->
 		<footer>
-		    <p class="wrapped footer-text"></p>
+		    <p class="wrapped footer-text">Copyright © <?php echo date("Y");?> GNDEC Ludhiana</p>
 		</footer>
 	<!-- Footer Ends -->    
 	</div>

@@ -208,7 +208,8 @@ body {
 @media only screen and (max-width: 600px) {
   /* line 141, ../sass/screen.scss */
   .video-triangle {
-    background-image: url(tasveer/black.jpg);
+    width: auto;
+    height: auto;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -226,7 +227,15 @@ body {
   height: 100%;
   border-bottom: 1px dashed #222222;
 }
-/* line 161, ../sass/screen.scss */
+@media only screen and (max-width: 600px) {
+  /* line 158, ../sass/screen.scss */
+  .slide1 {
+    background-image: url(tasveer/black.jpg);
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 162, ../sass/screen.scss */
 .slide1 .s1sec {
   display: block;
   width: 100%;
@@ -234,7 +243,7 @@ body {
   overflow: hidden;
   opacity: 0.90;
 }
-/* line 173, ../sass/screen.scss */
+/* line 174, ../sass/screen.scss */
 .slide1 .s1div:nth-child(odd) {
   -webkit-transform: rotate(25deg);
   -moz-transform: rotate(25deg);
@@ -252,7 +261,7 @@ body {
   margin-left: -23%;
 }
 @media only screen and (max-width: 600px) {
-  /* line 173, ../sass/screen.scss */
+  /* line 174, ../sass/screen.scss */
   .slide1 .s1div:nth-child(odd) {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -262,20 +271,20 @@ body {
     margin-left: -10%;
   }
 }
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .slide1 .s1div:nth-child(even) {
   height: 100%;
   width: 39%;
   float: right;
 }
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .slide1 .s1Heading {
   padding-top: 10rem;
   color: #fafafa;
   text-align: center;
   font-size: 10rem;
 }
-/* line 198, ../sass/screen.scss */
+/* line 199, ../sass/screen.scss */
 .slide1 .img1 {
   width: 44%;
   height: 75%;
@@ -284,7 +293,7 @@ body {
   margin-right: 5rem;
 }
 @media only screen and (max-width: 820px) {
-  /* line 198, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   .slide1 .img1 {
     float: right;
     width: 42%;
@@ -295,7 +304,7 @@ body {
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 198, ../sass/screen.scss */
+  /* line 199, ../sass/screen.scss */
   .slide1 .img1 {
     float: right;
     width: 50%;
@@ -308,12 +317,12 @@ body {
 
 /*************** SLIDE 1 OVER **************/
 /**************** SLIDE 2 ******************/
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .slide2 {
   height: 100%;
   border-bottom: 1px dashed #222222;
 }
-/* line 221, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .slide2 .text2 {
   width: 100%;
   height: 100%;
@@ -323,7 +332,7 @@ body {
   background-repeat: no-repeat;
   position: absolute;
 }
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .slide2 .text2 .slide2-description {
   width: 100%;
   height: 100%;
@@ -336,14 +345,14 @@ body {
   padding-top: 2rem;
 }
 @media only screen and (max-width: 820px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .slide2 .text2 .slide2-description {
     padding-top: 9rem;
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 230, ../sass/screen.scss */
+  /* line 231, ../sass/screen.scss */
   .slide2 .text2 .slide2-description {
     padding-top: 2em;
     font-size: 34px;
@@ -352,57 +361,65 @@ body {
 
 /************** SLIDE 2 OVER ***************/
 /************** SLIDE 3 ***************/
-/* line 251, ../sass/screen.scss */
+/* line 252, ../sass/screen.scss */
 .shrink {
   max-width: 1200px;
   margin: auto;
 }
 
-/* line 256, ../sass/screen.scss */
+/* line 257, ../sass/screen.scss */
 .s_data {
   padding-top: 15px;
 }
 
-/* line 260, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 .content {
   width: 50%;
   float: left;
   margin-left: 10px;
 }
 @media only screen and (max-width: 600px) {
-  /* line 260, ../sass/screen.scss */
+  /* line 261, ../sass/screen.scss */
   .content {
     width: 90%;
     clear: both;
   }
 }
 
-/* line 267, ../sass/screen.scss */
+/* line 268, ../sass/screen.scss */
 .slide3 {
   height: auto;
   border-bottom: 1px dashed #222222;
   font-weight: 400;
 }
 @media only screen and (max-width: 820px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .slide3 {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 267, ../sass/screen.scss */
+  /* line 268, ../sass/screen.scss */
   .slide3 {
     display: none;
   }
 }
-/* line 274, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .slide3 .slide3heading {
   text-align: center;
   font-size: 5rem;
   font-weight: 400;
   color: #68b8df;
 }
-/* line 281, ../sass/screen.scss */
+/* line 282, ../sass/screen.scss */
+.slide3 .turnpages {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 400;
+  padding-top: 2rem;
+  color: #68b8df;
+}
+/* line 289, ../sass/screen.scss */
 .slide3 .magzinetext {
   text-align: left;
   font-size: 4rem;
@@ -411,7 +428,7 @@ body {
   color: #fafafa;
   z-index: 2000;
 }
-/* line 290, ../sass/screen.scss */
+/* line 298, ../sass/screen.scss */
 .slide3 .magazine {
   float: right;
   display: inline-block;
@@ -420,18 +437,18 @@ body {
   margin: 80px 20rem 10px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 290, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   .slide3 .magazine {
     display: none;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 290, ../sass/screen.scss */
+  /* line 298, ../sass/screen.scss */
   .slide3 .magazine {
     display: none;
   }
 }
-/* line 300, ../sass/screen.scss */
+/* line 308, ../sass/screen.scss */
 .slide3 .magazine .turn-page {
   background-color: #333333;
   background-size: 100% 100%;
@@ -439,12 +456,20 @@ body {
 
 /************** SLIDE 3 OVER ***************/
 /************** SLIDE 4  ***************/
-/* line 310, ../sass/screen.scss */
+/* line 318, ../sass/screen.scss */
 .slide4 {
   height: auto;
   border-bottom: 1px dashed #222222;
 }
-/* line 314, ../sass/screen.scss */
+@media only screen and (max-width: 600px) {
+  /* line 318, ../sass/screen.scss */
+  .slide4 {
+    background-image: url(tasveer/black.jpg);
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 323, ../sass/screen.scss */
 .slide4 .teamHeading {
   color: #fafafa;
   text-align: center;
@@ -452,32 +477,32 @@ body {
   font-weight: 400;
 }
 @media only screen and (max-width: 600px) {
-  /* line 314, ../sass/screen.scss */
+  /* line 323, ../sass/screen.scss */
   .slide4 .teamHeading {
     font-size: 5rem;
   }
 }
-/* line 322, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .slide4 .teamline {
   text-align: center;
   color: #fafafa;
   font-size: 3.5rem;
 }
 @media only screen and (max-width: 820px) {
-  /* line 322, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .slide4 .teamline {
     font-size: 3rem;
     padding-top: 2rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  /* line 322, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .slide4 .teamline {
     font-size: 2rem;
     padding-top: 0.7rem;
   }
 }
-/* line 330, ../sass/screen.scss */
+/* line 339, ../sass/screen.scss */
 .slide4 .team {
   margin: 20px 0 0 0;
   padding: 50px;
@@ -486,16 +511,16 @@ body {
   text-align: center;
   width: 100%;
 }
-/* line 339, ../sass/screen.scss */
+/* line 348, ../sass/screen.scss */
 .slide4 .team:after, .slide4 .teams:before {
   content: '';
   display: table;
 }
-/* line 344, ../sass/screen.scss */
+/* line 353, ../sass/screen.scss */
 .slide4 .team:after {
   clear: both;
 }
-/* line 348, ../sass/screen.scss */
+/* line 357, ../sass/screen.scss */
 .slide4 .team li {
   width: 240px;
   height: 220px;
@@ -503,13 +528,13 @@ body {
   margin: 20px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 348, ../sass/screen.scss */
+  /* line 357, ../sass/screen.scss */
   .slide4 .team li {
     width: 200px;
     height: 200px;
   }
 }
-/* line 356, ../sass/screen.scss */
+/* line 365, ../sass/screen.scss */
 .slide4 .teams {
   width: 100%;
   height: 100%;
@@ -521,62 +546,62 @@ body {
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
-/* line 365, ../sass/screen.scss */
+/* line 374, ../sass/screen.scss */
 .slide4 .image1 {
   background-image: url(tasveer/hsrai.jpg);
   background-size: 253px 230px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 365, ../sass/screen.scss */
+  /* line 374, ../sass/screen.scss */
   .slide4 .image1 {
     background-size: 217px 239px;
   }
 }
-/* line 371, ../sass/screen.scss */
+/* line 380, ../sass/screen.scss */
 .slide4 .image2 {
   background-image: url(tasveer/dk1.JPG);
   background-size: 253px 230px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 371, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   .slide4 .image2 {
     background-size: 217px 239px;
   }
 }
-/* line 377, ../sass/screen.scss */
+/* line 386, ../sass/screen.scss */
 .slide4 .image3 {
   background-image: url(tasveer/satwant.JPG);
   background-size: 253px 230px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 377, ../sass/screen.scss */
+  /* line 386, ../sass/screen.scss */
   .slide4 .image3 {
     background-size: 217px 239px;
   }
 }
-/* line 383, ../sass/screen.scss */
+/* line 392, ../sass/screen.scss */
 .slide4 .image4 {
   background-image: url(tasveer/ravina.jpg);
   background-size: 253px 230px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 383, ../sass/screen.scss */
+  /* line 392, ../sass/screen.scss */
   .slide4 .image4 {
     background-size: 217px 239px;
   }
 }
-/* line 389, ../sass/screen.scss */
+/* line 398, ../sass/screen.scss */
 .slide4 .image5 {
   background-image: url(tasveer/dubey.jpg);
   background-size: 240px 220px;
 }
 @media only screen and (max-width: 820px) {
-  /* line 389, ../sass/screen.scss */
+  /* line 398, ../sass/screen.scss */
   .slide4 .image5 {
     background-size: 217px 239px;
   }
 }
-/* line 395, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .slide4 .description {
   position: absolute;
   background: rgba(63, 147, 147, 0.8);
@@ -595,7 +620,7 @@ body {
   transform: scale(0);
   -webkit-backface-visibility: hidden;
 }
-/* line 407, ../sass/screen.scss */
+/* line 416, ../sass/screen.scss */
 .slide4 .description h3 {
   color: #fff;
   letter-spacing: 1px;
@@ -605,7 +630,7 @@ body {
   height: 100px;
   text-shadow: 0 0 1px white, 0 1px 2px rgba(0, 0, 0, 0.3);
 }
-/* line 418, ../sass/screen.scss */
+/* line 427, ../sass/screen.scss */
 .slide4 .description p {
   color: #fff;
   padding: 10px 5px;
@@ -620,7 +645,7 @@ body {
   -o-transition: all 1s ease-in-out 0.4s;
   transition: all 1s ease-in-out 0.4s;
 }
-/* line 429, ../sass/screen.scss */
+/* line 438, ../sass/screen.scss */
 .slide4 .description p a {
   display: block;
   color: #fff;
@@ -633,18 +658,18 @@ body {
   padding-top: 4px;
   font-family: 'Open Sans', Arial, sans-serif;
 }
-/* line 442, ../sass/screen.scss */
+/* line 451, ../sass/screen.scss */
 .slide4 .description p a:hover {
   color: #fff222;
   color: rgba(255, 242, 34, 0.8);
 }
-/* line 447, ../sass/screen.scss */
+/* line 456, ../sass/screen.scss */
 .slide4 .teams:hover {
   -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.1), 0 1px 2px rgba(0, 0, 0, 0.1);
 }
-/* line 451, ../sass/screen.scss */
+/* line 460, ../sass/screen.scss */
 .slide4 .teams:hover .description {
   -webkit-transform: scale(1);
   -moz-transform: scale(1);
@@ -653,21 +678,21 @@ body {
   transform: scale(1);
   opacity: 1;
 }
-/* line 456, ../sass/screen.scss */
+/* line 465, ../sass/screen.scss */
 .slide4 .teams:hover .description p {
   opacity: 1;
 }
 
 /************** SLIDE 4 OVER ***********/
 /********* Slide 5 **********/
-/* line 464, ../sass/screen.scss */
+/* line 473, ../sass/screen.scss */
 .slide5 {
   height: auto;
 }
-/* line 468, ../sass/screen.scss */
+/* line 477, ../sass/screen.scss */
 .slide5 .picture {
   height: 550px;
-  background-image: url(tasveer/gne1.jpg);
+  background-image: url(tasveer/gne2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: 100% 100%;
@@ -675,19 +700,19 @@ body {
   -o-background-size: 100% 100%;
   background-size: 100% 100%;
 }
-/* line 474, ../sass/screen.scss */
+/* line 483, ../sass/screen.scss */
 .slide5 .picture .picture-text {
   padding-top: 90px;
   width: 100%;
   height: auto;
 }
-/* line 481, ../sass/screen.scss */
+/* line 490, ../sass/screen.scss */
 .slide5 footer {
   padding-top: 60px;
   min-height: 100px;
   background: #333333;
 }
-/* line 487, ../sass/screen.scss */
+/* line 496, ../sass/screen.scss */
 .slide5 .footer-text {
   padding: 15px 15px;
   color: #c9c9c9;

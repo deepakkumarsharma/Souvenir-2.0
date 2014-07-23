@@ -145,7 +145,7 @@ body
     width:auto;
     height:auto;
     position: fixed;
-    @include breakpoint(small) {background-image:url(tasveer/black.jpg);}
+    @include breakpoint(small) {width: auto; height: auto;}
     @include breakpoint(medium) {width: auto; height:auto;}
     @include breakpoint(large) {width: auto; height:auto;}
 }
@@ -158,6 +158,7 @@ body
 .slide1 {
     height:100%;
     border-bottom:1px dashed $black;
+    @include breakpoint(small){background-image:url(tasveer/black.jpg); width: 100%; height:100%;}
     .s1sec {
         display: block;
         width:100%;
@@ -278,6 +279,13 @@ body
         color: $lessblue; 
     }
     
+    .turnpages {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 400;
+        padding-top: 2rem;        
+        color: $lessblue;
+    }
     .magzinetext {
         text-align: left;
         font-size: 4rem;
@@ -310,7 +318,8 @@ body
 .slide4 {
     height:auto;
     border-bottom:1px dashed $black;
-    
+    @include breakpoint(small){background-image:url(tasveer/black.jpg); width: 100%; height:auto;}
+
     .teamHeading {
         color: $white;
         text-align: center;
@@ -467,7 +476,7 @@ body
     
     .picture {
         height: 550px;
-        background-image:url(tasveer/gne1.jpg);
+        background-image:url(tasveer/gne2.jpg);
         background-repeat:no-repeat;
         background-attachment:fixed;
         @include background-size(100% 100%);
