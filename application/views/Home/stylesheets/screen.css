@@ -549,7 +549,7 @@ body {
 /* line 374, ../sass/screen.scss */
 .slide4 .image1 {
   background-image: url(tasveer/hsrai.jpg);
-  background-size: 253px 230px;
+  background-size: 253px 260px;
 }
 @media only screen and (max-width: 820px) {
   /* line 374, ../sass/screen.scss */
@@ -560,7 +560,7 @@ body {
 /* line 380, ../sass/screen.scss */
 .slide4 .image2 {
   background-image: url(tasveer/dk1.JPG);
-  background-size: 253px 230px;
+  background-size: 257px 240px;
 }
 @media only screen and (max-width: 820px) {
   /* line 380, ../sass/screen.scss */
@@ -571,7 +571,7 @@ body {
 /* line 386, ../sass/screen.scss */
 .slide4 .image3 {
   background-image: url(tasveer/satwant.JPG);
-  background-size: 253px 230px;
+  background-size: 313px 309px;
 }
 @media only screen and (max-width: 820px) {
   /* line 386, ../sass/screen.scss */
@@ -582,7 +582,7 @@ body {
 /* line 392, ../sass/screen.scss */
 .slide4 .image4 {
   background-image: url(tasveer/ravina.jpg);
-  background-size: 253px 230px;
+  background-size: cover;
 }
 @media only screen and (max-width: 820px) {
   /* line 392, ../sass/screen.scss */
@@ -593,7 +593,7 @@ body {
 /* line 398, ../sass/screen.scss */
 .slide4 .image5 {
   background-image: url(tasveer/dubey.jpg);
-  background-size: 240px 220px;
+  background-size: cover;
 }
 @media only screen and (max-width: 820px) {
   /* line 398, ../sass/screen.scss */
@@ -691,28 +691,32 @@ body {
 }
 /* line 477, ../sass/screen.scss */
 .slide5 .picture {
-  height: 550px;
-  background-image: url(tasveer/gne2.jpg);
+  width: 100%;
+  height: 100%;
+  background: url(tasveer/gne2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  -webkit-background-size: 100% 100%;
-  -moz-background-size: 100% 100%;
-  -o-background-size: 100% 100%;
   background-size: 100% 100%;
+  border-bottom: 1px dashed #222222;
+  min-height: 480px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-/* line 483, ../sass/screen.scss */
+/* line 488, ../sass/screen.scss */
 .slide5 .picture .picture-text {
   padding-top: 90px;
   width: 100%;
   height: auto;
 }
-/* line 490, ../sass/screen.scss */
+/* line 495, ../sass/screen.scss */
 .slide5 footer {
   padding-top: 60px;
   min-height: 100px;
   background: #333333;
 }
-/* line 496, ../sass/screen.scss */
+/* line 501, ../sass/screen.scss */
 .slide5 .footer-text {
   padding: 15px 15px;
   color: #c9c9c9;

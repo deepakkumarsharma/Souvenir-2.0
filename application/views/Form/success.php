@@ -19,8 +19,7 @@
         <div class="s_data1 shrink1">
             <div class="textarea">
             	<h1 class="heading2">Lines Dedicated To All My Friends</h1>
-            	<h1 class="heading2">ਜਿੰਦਗੀ  ਵਿਚ  ਫੇਰ  ਮਿਲਣਗੇ  ਆਪਾਂ<br>ਕੀਤੇ  ਵੇਖ  ਕੇ  ਨਾ  ਨਜ਼ਰਾਂ  ਝੁਕਾ  ਲਵੀ <br>ਤੇਨੁ  ਵੇਖ੍ਯਾ  ਲਗਦਾ  ਯਾਰ  ਕੀਤੇ<br> 
-				ਬਾਸ  ਕਹ  ਕੇ  ਝਾਪ੍ਪੀ  ਪਾਹ  ਲਵੀਂ</h1>
+            	<h1 class="heading2">ਜਿੰਦਗੀ ਵਿਚ ਫ਼ਿਰ ਮਿਲਾਂਗੇ ਆਪਾਂ,<br>ਕਿਤੇ ਵੇਖ ਕੇ ਨਜ਼ਰਾਂ ਨਾ ਝੁਕਾ ਲਵੀਂ,<br>ਤੈਨੂੰ ਵੇਖਿਆ ਲਗਦੈ ਯਾਰ ਕਿਥੇ,<br>ਬਸ ਕਹਕੇ ਝਪ੍ਪੀ ਪਾਹ ਲਵੀਂ।।</h1>
             </div>
             <div class="keepCalm iris">
             </div>

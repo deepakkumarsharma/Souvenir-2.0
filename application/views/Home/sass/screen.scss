@@ -373,31 +373,31 @@ body
 
     .image1 { 
         background-image: url(tasveer/hsrai.jpg);
-        background-size: 253px 230px;
+        background-size: 253px 260px;
         @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image2 { 
         background-image: url(tasveer/dk1.JPG);
-        background-size: 253px 230px;
+        background-size: 257px 240px;
         @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image3 { 
         background-image: url(tasveer/satwant.JPG);
-        background-size: 253px 230px;
+        background-size: 313px 309px;
         @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image4 { 
         background-image: url(tasveer/ravina.jpg);
-        background-size: 253px 230px;
+        background-size: cover;
         @include breakpoint(medium){background-size: 217px 239px;}
     }
 
     .image5 { 
         background-image: url(tasveer/dubey.jpg);
-        background-size: 240px 220px;
+        background-size: cover;
         @include breakpoint(medium){background-size: 217px 239px;}
     }
 
@@ -475,11 +475,16 @@ body
     // border-bottom:1px dashed $black;
     
     .picture {
-        height: 550px;
-        background-image:url(tasveer/gne2.jpg);
+        width:100%;
+        height:100%;
+        background:url(tasveer/gne2.jpg);
         background-repeat:no-repeat;
         background-attachment:fixed;
-        @include background-size(100% 100%);
+        background-size: 100% 100%;
+        border-bottom:1px dashed $black;
+        min-height:480px;
+        @include background-size(cover);
+
         .picture-text {
             padding-top:90px;
             width:100%;

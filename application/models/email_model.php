@@ -16,7 +16,7 @@ class Email_model extends CI_Model {
 			
 		$this->load->library('email', $config);
 		$this->email->set_newline("\r\n");
-		$this->email->from('deeky.sharma@gmail.com', "iH8sum3r");
+		$this->email->from('', "iH8sum3r");
 		$this->email->to($email);		
 		$this->email->subject("Yaadein Email Verification");
 		$this->email->message("Dear User,\nPlease click on below URL or paste into your browser to verify your Email Address\n\n http://localhost/Souvenir-2.0/index.php/registration/verifyEmailAddress/".$verificationText."\n"."\n\nThanks\nDeePak");
